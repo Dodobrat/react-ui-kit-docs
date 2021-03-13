@@ -1,0 +1,92 @@
+import { Breadcrumbs, Container } from "@dodobrat/react-ui-kit";
+import React from "react";
+import { Link, Route, Switch } from "react-router-dom";
+
+const BreadcrumbsPage = () => {
+	const BreadcrumbSeparatorTest = () => {
+		return <div>👽</div>;
+	};
+
+	return (
+		<div>
+			<h1>Breadcrumbs</h1>
+			<Breadcrumbs>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<h1>Contained Breadcrumbs (supports pigments and elevation)</h1>
+			<Breadcrumbs contained>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs contained pigment='primary'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs contained contrast pigment='primary'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs contained contrast pigment='success' elevation='medium'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<h1>Custom Separators</h1>
+			<Breadcrumbs separator='>'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs separator='🤖'>
+				<Breadcrumbs.Item>
+					<Link to='/'>App</Link>
+				</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs separator={<BreadcrumbSeparatorTest />}>
+				<Breadcrumbs.Item>
+					<Link to='/'>App</Link>
+				</Breadcrumbs.Item>
+				<Breadcrumbs.Item>
+					<Link to='/epic'>Epicness</Link>
+				</Breadcrumbs.Item>
+				<Breadcrumbs.Item>
+					<Link to='/gg'>GG</Link>
+				</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Switch>
+				<Route path='/epic'>
+					<Container>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, vero?</Container>
+				</Route>
+				<Route path='/gg'>
+					<Container>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam aperiam recusandae placeat veniam excepturi
+						suscipit voluptatem soluta libero animi, quasi adipisci, culpa molestias perspiciatis incidunt, labore fuga
+						distinctio voluptatum? Soluta tenetur corrupti asperiores corporis necessitatibus minus ab voluptatem, esse
+						provident. Nesciunt totam similique voluptatum! Exercitationem doloremque voluptatum laudantium inventore,
+						blanditiis totam velit laboriosam delectus animi nam commodi, nemo ex necessitatibus placeat assumenda vel nobis
+						dicta repellat. Velit accusamus ad commodi, quas laborum, fuga perspiciatis consequuntur similique ducimus
+						asperiores rem eos enim beatae, impedit numquam! Dolorum minus sed dolor similique delectus aspernatur, veniam unde
+						sapiente quam laborum itaque laboriosam sunt?
+					</Container>
+				</Route>
+			</Switch>
+		</div>
+	);
+};
+
+export default BreadcrumbsPage;
