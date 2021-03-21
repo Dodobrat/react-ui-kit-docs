@@ -17,6 +17,8 @@ import SkeletonPage from "./pages/SkeletonPage";
 import SpinnersPage from "./pages/SpinnersPage";
 import TabsPage from "./pages/TabsPage";
 import TypographyPage from "./pages/TypographyPage";
+import FormsPage from "./pages/FormsPage";
+import InputsPage from "./pages/InputsPage";
 
 const App = () => {
 	const [dark, setDark] = useDarkMode();
@@ -31,7 +33,7 @@ const App = () => {
 				<br />
 				<h1>
 					<Button onClick={() => setDark((prev) => !prev)} round pigment='secondary'>
-						{dark ? <Moon className='btn__icon' /> : <Sun className='btn__icon' />}
+						{dark ? <Moon className='dui__icon' /> : <Sun className='dui__icon' />}
 					</Button>{" "}
 					{dark ? "Dark Theme" : "Light Theme"}
 				</h1>
@@ -89,6 +91,12 @@ const App = () => {
 					<NavLink to='/typography' activeStyle={{ fontWeight: 700 }}>
 						Typography
 					</NavLink>
+					<NavLink to='/inputs' activeStyle={{ fontWeight: 700 }}>
+						Inputs
+					</NavLink>
+					<NavLink to='/forms' activeStyle={{ fontWeight: 700 }}>
+						Forms
+					</NavLink>
 				</div>
 			</DragScroll>
 
@@ -111,6 +119,8 @@ const App = () => {
 				<Route path='/spinners' component={SpinnersPage} />
 				<Route path='/tabs' component={TabsPage} />
 				<Route path='/typography' component={TypographyPage} />
+				<Route path='/inputs' component={InputsPage} />
+				<Route path='/forms' component={FormsPage} />
 			</Switch>
 
 			<div>
@@ -119,7 +129,7 @@ const App = () => {
 				<h1>Back To Top</h1>
 				<BackTop position='bottom' />
 				<BackTop scrollDistanceTrigger={250} position='bottom-left'>
-					<CaretUp className='btn__icon' />
+					<CaretUp className='dui__icon' />
 				</BackTop>
 				<BackTop scrollDistanceTrigger={100} />
 				<br />

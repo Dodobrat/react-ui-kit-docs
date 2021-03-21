@@ -15,9 +15,6 @@ const SkeletonPage = () => {
 			<br />
 			<h1>Pigmented Skeleton Loader</h1>
 			<Skeleton pigment='info' />
-			<br />
-			<h1>Contrast Skeleton Loader</h1>
-			<Skeleton pigment='info' contrast />
 		</div>
 	);
 };

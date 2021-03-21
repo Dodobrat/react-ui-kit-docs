@@ -22,7 +22,7 @@ const TabsPage = () => {
 				<br />
 				<br />
 
-				<Tabs activeTab={2} orientation={tabOrientation} tabActions={<Button>Action</Button>}>
+				<Tabs activeTab={8} orientation={tabOrientation}>
 					<Tabs.Panel
 						tab={
 							<>
@@ -67,7 +67,7 @@ const TabsPage = () => {
 			<div id='vertical-tabs'>
 				<br />
 				<h2>Vertical Tabs</h2>
-				<Tabs activeTab={2} orientation='vertical' pigment='success' contrast flat tabActions={<Button>Action</Button>}>
+				<Tabs activeTab={2} orientation='vertical' pigment='success' flat>
 					<Tabs.Panel tab={"Tab 1"}>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
 					<Tabs.Panel tab={"Tab 2"}>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
 					<Tabs.Panel tab={"Tab 3"}>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>

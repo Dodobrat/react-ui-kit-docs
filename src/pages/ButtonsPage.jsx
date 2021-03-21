@@ -13,25 +13,35 @@ const ButtonsPage = () => {
 					<Button>test3</Button>
 					<Button>test3</Button>
 				</ButtonGroup>
+				<br />
+				<br />
 				<ButtonGroup vertical rounded>
 					<Button>test1</Button>
 					<Button pigment='danger'>test2</Button>
 					<Button>test3</Button>
 					<Button>test3</Button>
 				</ButtonGroup>
-				<ButtonGroup contrast>
+				<br />
+				<br />
+				<ButtonGroup>
 					<Button>test1</Button>
 					<Button pigment='danger'>test2</Button>
 				</ButtonGroup>
+				<br />
+				<br />
 				<ButtonGroup flat>
 					<Button>test1</Button>
 					<Button pigment='danger'>test2</Button>
 				</ButtonGroup>
+				<br />
+				<br />
 				<ButtonGroup rounded>
 					<Button>test1</Button>
 					<Button>test2</Button>
 					<Button pigment='danger'>test3</Button>
 				</ButtonGroup>
+				<br />
+				<br />
 				<ButtonGroup wide>
 					<Button>test1</Button>
 					<Button pigment='danger'>test2</Button>
@@ -75,19 +85,22 @@ const ButtonsPage = () => {
 				<br />
 				<h1>Round Button:</h1>
 				<Button size='xs' round>
-					<Sun className='btn__icon' />
+					<Sun className='dui__icon' />
 				</Button>
 				<Button size='sm' round>
-					<Sun className='btn__icon' />
+					<Sun className='dui__icon' />
 				</Button>
 				<Button size='md' round>
-					<Sun className='btn__icon' />
+					<Sun className='dui__icon' />
 				</Button>
 				<Button size='lg' round>
-					<Sun className='btn__icon' />
+					<Sun className='dui__icon' />
 				</Button>
 				<Button size='xl' round>
-					<Sun className='btn__icon' />
+					<Sun className='dui__icon' />
+				</Button>
+				<Button size='xl' round isLoading>
+					<Sun className='dui__icon' />
 				</Button>
 			</div>
 			<br />
@@ -100,7 +113,7 @@ const ButtonsPage = () => {
 				<Button as={Link} to='/about'>
 					I am a React Router Link
 				</Button>
-				<Button as={NavLink} to='/users' activeClassName='dui__btn--active' loading>
+				<Button as={NavLink} to='/users' activeClassName='dui__btn--active' isLoading>
 					I am a React Router NavLink
 				</Button>
 
@@ -161,45 +174,46 @@ const ButtonsPage = () => {
 				</Button>
 				<br />
 				<h1>Loading sizes:</h1>
-				<Button loading size='xs'>
+				<Button isLoading size='xs'>
 					I am a XSmall Button
 				</Button>
-				<Button loading size='sm'>
+				<Button isLoading size='sm'>
 					I am a Small Button
 				</Button>
-				<Button loading size='md'>
+				<Button isLoading size='md'>
 					I am a Medium Button
 				</Button>
-				<Button loading size='lg'>
+				<Button isLoading size='lg'>
 					I am a Large Button
 				</Button>
-				<Button loading size='xl'>
+				<Button isLoading size='xl'>
 					I am a XLarge Button
 				</Button>
 			</div>
 			<br />
 			<div id='btns-pigments'>
-				<h1>Contrast Button Colors:</h1>
-				<Button contrast>I am a Button</Button>
-				<Button contrast pigment='secondary'>
+				<h1>Button Text Colors:</h1>
+				<Button pigment={null} pigmentColor='primary'>
 					I am a Button
 				</Button>
-				<Button contrast pigment='success'>
+				<Button pigment={null} pigmentColor='secondary'>
 					I am a Button
 				</Button>
-				<Button contrast pigment='info'>
+				<Button pigment={null} pigmentColor='success'>
 					I am a Button
 				</Button>
-				<Button contrast pigment='warning'>
+				<Button pigment={null} pigmentColor='info'>
 					I am a Button
 				</Button>
-				<Button contrast pigment='danger'>
+				<Button pigment={null} pigmentColor='warning'>
 					I am a Button
 				</Button>
-				<Button contrast pigment={null}>
+				<Button pigment={null} pigmentColor='danger'>
 					I am a Button
 				</Button>
-				<br />
+				<Button pigment={null} pigmentColor={null}>
+					I am a Button
+				</Button>
 				<h1>Button Colors:</h1>
 				<Button>I am a Button</Button>
 				<Button pigment='secondary'>I am a Button</Button>
@@ -211,41 +225,47 @@ const ButtonsPage = () => {
 				<Button href='https://google.com'>Go to Google</Button>
 			</div>
 			<br />
-			<div id='loading-btns'>
+			<div id='isLoading-btns'>
+				<h1>Loading Button Text Colors:</h1>
+				<Button pigment={null} pigmentColor='primary' isLoading>
+					I am a Button
+				</Button>
+				<Button pigment={null} pigmentColor='secondary' isLoading>
+					I am a Button
+				</Button>
+				<Button pigment={null} pigmentColor='success' isLoading>
+					I am a Button
+				</Button>
+				<Button pigment={null} pigmentColor='info' isLoading>
+					I am a Button
+				</Button>
+				<Button pigment={null} pigmentColor='warning' isLoading>
+					I am a Button
+				</Button>
+				<Button pigment={null} pigmentColor='danger' isLoading>
+					I am a Button
+				</Button>
+				<Button pigment={null} pigmentColor={null} isLoading>
+					I am a Button
+				</Button>
 				<h1>Loading Button colors:</h1>
-				<Button loading>I am a Button</Button>
-				<Button loading pigment='secondary'>
+				<Button isLoading>I am a Button</Button>
+				<Button isLoading pigment='secondary'>
 					I am a Button
 				</Button>
-				<Button loading pigment='success'>
+				<Button isLoading pigment='success'>
 					I am a Button
 				</Button>
-				<Button loading pigment='info'>
+				<Button isLoading pigment='info'>
 					I am a Button
 				</Button>
-				<Button loading pigment='warning'>
+				<Button isLoading pigment='warning'>
 					I am a Button
 				</Button>
-				<Button loading pigment='danger'>
+				<Button isLoading pigment='danger'>
 					I am a Button
 				</Button>
-				<br />
-				<Button contrast loading>
-					I am a Button
-				</Button>
-				<Button contrast loading pigment='secondary'>
-					I am a Button
-				</Button>
-				<Button contrast loading pigment='success'>
-					I am a Button
-				</Button>
-				<Button contrast loading pigment='info'>
-					I am a Button
-				</Button>
-				<Button contrast loading pigment='warning'>
-					I am a Button
-				</Button>
-				<Button contrast loading pigment='danger'>
+				<Button isLoading pigment={null}>
 					I am a Button
 				</Button>
 			</div>

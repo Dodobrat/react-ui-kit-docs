@@ -10,14 +10,14 @@ const SpinnersPage = () => {
 			<SpinnerLoader size='md' pigment='info' />
 			<SpinnerLoader size='lg' pigment='success' />
 			<SpinnerLoader size='xl' />
-			<SpinnerLoader contrast />
-			<SpinnerLoader contrast pigment='danger' />
+			<SpinnerLoader pigment={null} />
+			<SpinnerLoader pigment='danger' />
 			<br />
 			<LineLoader />
 			<br />
-			<LineLoader contrast />
+			<LineLoader pigment='info' />
 			<br />
-			<LineLoader contrast pigment='success' />
+			<LineLoader pigment='success' />
 			<br />
 		</div>
 	);

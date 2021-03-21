@@ -6,14 +6,14 @@ const ListGroupPage = () => {
 		<div>
 			<h1>List groups / items</h1>
 			<br />
-			<ListGroup style={{ maxWidth: "30rem" }} flat pigment='danger'>
+			<ListGroup style={{ maxWidth: "30rem" }} flat pigment='secondary'>
 				<ListGroup.Header>Items Header</ListGroup.Header>
 				<ListGroup.Item>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur harum sequi earum error a ipsam quia
 					corporis, qui consequatur perferendis accusamus saepe, nemo quam.
 					<br />
 					<br />
-					<Button>Random</Button>
+					<Button pigment='info'>Random</Button>
 				</ListGroup.Item>
 				<ListGroup.Item>Item 2</ListGroup.Item>
 				<ListGroup.Item>Item 3</ListGroup.Item>

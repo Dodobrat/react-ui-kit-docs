@@ -166,6 +166,18 @@ const CollapsePage = () => {
 			</Collapse>
 			<br />
 			<h1>Collapse Pigments</h1>
+			<Collapse pigment='secondary'>
+				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
+				<Collapse.Content>
+					<div>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut quisquam similique consequuntur molestias
+						nostrum culpa explicabo quibusdam atque qui dicta tempore harum neque, provident maiores, corporis voluptate vitae
+						veritatis accusamus maxime ipsum natus corrupti officiis. Nihil cumque iusto fugit modi totam, temporibus suscipit
+						reiciendis rerum recusandae assumenda iste nesciunt, ut distinctio a quod dolorem accusamus ducimus officia autem
+					</div>
+				</Collapse.Content>
+			</Collapse>
+			<br />
 			<Collapse pigment='info'>
 				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
 				<Collapse.Content>
@@ -178,20 +190,8 @@ const CollapsePage = () => {
 				</Collapse.Content>
 			</Collapse>
 			<br />
-			<Collapse pigment='info' contrast>
-				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
-				<Collapse.Content>
-					<div>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut quisquam similique consequuntur molestias
-						nostrum culpa explicabo quibusdam atque qui dicta tempore harum neque, provident maiores, corporis voluptate vitae
-						veritatis accusamus maxime ipsum natus corrupti officiis. Nihil cumque iusto fugit modi totam, temporibus suscipit
-						reiciendis rerum recusandae assumenda iste nesciunt, ut distinctio a quod dolorem accusamus ducimus officia autem
-					</div>
-				</Collapse.Content>
-			</Collapse>
-			<br />
 			<h1>Collapse Loaders</h1>
-			<Collapse loading>
+			<Collapse isLoading>
 				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
 				<Collapse.Content>
 					<div>
@@ -203,7 +203,8 @@ const CollapsePage = () => {
 				</Collapse.Content>
 			</Collapse>
 			<br />
-			<Collapse loading disableWhileLoading={false}>
+			<Collapse isLoading disableWhileLoading={false}>
+				<Collapse.Loader pigment='info' />
 				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
 				<Collapse.Content>
 					<div>
@@ -215,8 +216,8 @@ const CollapsePage = () => {
 				</Collapse.Content>
 			</Collapse>
 			<br />
-			<Collapse loading disableWhileLoading={false}>
-				<Collapse.Loader pigment='success' contrast />
+			<Collapse isLoading disableWhileLoading={false}>
+				<Collapse.Loader pigment='success' />
 				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
 				<Collapse.Content animation='collapse'>
 					<div>
@@ -228,7 +229,7 @@ const CollapsePage = () => {
 				</Collapse.Content>
 			</Collapse>
 			<br />
-			<Collapse loading disableWhileLoading={false}>
+			<Collapse isLoading disableWhileLoading={false}>
 				<Collapse.Loader>Custom Loader</Collapse.Loader>
 				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
 				<Collapse.Content>

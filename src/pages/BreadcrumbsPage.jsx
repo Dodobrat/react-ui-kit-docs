@@ -17,7 +17,7 @@ const BreadcrumbsPage = () => {
 			</Breadcrumbs>
 			<br />
 			<h1>Contained Breadcrumbs (supports pigments and elevation)</h1>
-			<Breadcrumbs contained>
+			<Breadcrumbs contained elevation='subtle'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
@@ -29,26 +29,44 @@ const BreadcrumbsPage = () => {
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained contrast pigment='primary'>
+			<Breadcrumbs contained pigment='secondary' rounded>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained contrast pigment='success' elevation='medium'>
+			<Breadcrumbs contained pigment='info' flat>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs contained pigment='success'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs contained pigment='warning'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs contained pigment='danger'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
 			<h1>Custom Separators</h1>
-			<Breadcrumbs separator='>'>
+			<Breadcrumbs contained separator='>'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs separator='🤖'>
+			<Breadcrumbs contained separator='🤖'>
 				<Breadcrumbs.Item>
 					<Link to='/'>App</Link>
 				</Breadcrumbs.Item>
@@ -56,7 +74,7 @@ const BreadcrumbsPage = () => {
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs separator={<BreadcrumbSeparatorTest />}>
+			<Breadcrumbs contained separator={<BreadcrumbSeparatorTest />}>
 				<Breadcrumbs.Item>
 					<Link to='/'>App</Link>
 				</Breadcrumbs.Item>

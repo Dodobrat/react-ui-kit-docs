@@ -33,9 +33,7 @@ const CardPage = () => {
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem aspernatur voluptates deserunt? Velit neque enim
 							amet magnam deserunt perferendis iure veritatis molestias itaque! Quam, in.
 						</p>
-						<Button pigment='danger' contrast>
-							Wassup
-						</Button>
+						<Button pigment='danger'>Wassup</Button>
 					</Card.Body>
 					<Card.Footer>Footer</Card.Footer>
 				</Card>
@@ -43,7 +41,7 @@ const CardPage = () => {
 			<br />
 			<div id='card-loaders'>
 				<h1>Out of the box loader</h1>
-				<Card style={{ maxWidth: "25rem" }} loading>
+				<Card style={{ maxWidth: "25rem" }} isLoading>
 					<Card.Header>Header</Card.Header>
 					<Card.Body>
 						<p>
@@ -55,8 +53,8 @@ const CardPage = () => {
 					<Card.Footer>Footer</Card.Footer>
 				</Card>
 				<h1>Loader Options</h1>
-				<Card style={{ maxWidth: "25rem" }} loading disableWhileLoading={false} flat>
-					<Card.Loader pigment='danger' contrast />
+				<Card style={{ maxWidth: "25rem" }} isLoading disableWhileLoading={false} flat>
+					<Card.Loader pigment='danger' />
 					<Card.Header>Header</Card.Header>
 					<Card.Body>
 						<p>
@@ -68,7 +66,7 @@ const CardPage = () => {
 					<Card.Footer>Footer</Card.Footer>
 				</Card>
 				<h1>Custom Loader (Access Loader Props)</h1>
-				<Card style={{ maxWidth: "25rem" }} loading>
+				<Card style={{ maxWidth: "25rem" }} isLoading>
 					<Card.Loader>
 						<h1>Custom Loader</h1>
 					</Card.Loader>
@@ -139,10 +137,10 @@ const CardPage = () => {
 						actions={
 							<>
 								<Button size='xs' pigment={null}>
-									<More className='btn__icon' />
+									<More className='dui__icon' />
 								</Button>
 								<Button size='xs' pigment={null}>
-									<Close className='btn__icon' />
+									<Close className='dui__icon' />
 								</Button>
 							</>
 						}>

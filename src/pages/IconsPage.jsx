@@ -3,11 +3,14 @@ import {
 	ArrowLeft,
 	ArrowRight,
 	ArrowUp,
+	Calendar,
 	CaretDown,
 	CaretLeft,
 	CaretRight,
 	CaretUp,
+	Clock,
 	Close,
+	CloseOutlined,
 	Completed,
 	Danger,
 	DblCaretDown,
@@ -15,9 +18,13 @@ import {
 	DblCaretRight,
 	DblCaretUp,
 	Eye,
+	EyeCrossed,
 	Flex,
 	Hamburger,
 	Info,
+	Lock,
+	Mail,
+	MailOpened,
 	Minus,
 	Moon,
 	More,
@@ -26,6 +33,7 @@ import {
 	Search,
 	Settings,
 	Sun,
+	User,
 	Warning,
 } from "@dodobrat/react-ui-kit";
 import React from "react";
@@ -86,12 +94,9 @@ const IconsPage = () => {
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>
-				<Flex.Col col={{ xs: 12 }}>
-					<h1>Other</h1>
+				<Flex.Col col={{ xs: 6 }}>
+					<h1>Status</h1>
 					<Flex>
-						<Flex.Col>
-							<Close />
-						</Flex.Col>
 						<Flex.Col>
 							<Completed />
 						</Flex.Col>
@@ -99,19 +104,62 @@ const IconsPage = () => {
 							<Danger />
 						</Flex.Col>
 						<Flex.Col>
-							<Eye />
-						</Flex.Col>
-						<Flex.Col>
-							<Hamburger />
+							<Warning />
 						</Flex.Col>
 						<Flex.Col>
 							<Info />
 						</Flex.Col>
 						<Flex.Col>
-							<Minus />
+							<Moon />
 						</Flex.Col>
 						<Flex.Col>
-							<Moon />
+							<Sun />
+						</Flex.Col>
+					</Flex>
+				</Flex.Col>
+				<Flex.Col col={{ xs: 6 }}>
+					<h1>Input (Helpers / preffixes / suffixes)</h1>
+					<Flex>
+						<Flex.Col>
+							<Search />
+						</Flex.Col>
+						<Flex.Col>
+							<Calendar />
+						</Flex.Col>
+						<Flex.Col>
+							<Clock />
+						</Flex.Col>
+						<Flex.Col>
+							<Lock />
+						</Flex.Col>
+						<Flex.Col>
+							<Mail />
+						</Flex.Col>
+						<Flex.Col>
+							<User />
+						</Flex.Col>
+					</Flex>
+				</Flex.Col>
+				<Flex.Col col={{ xs: 12 }}>
+					<h1>Other</h1>
+					<Flex>
+						<Flex.Col>
+							<Eye />
+						</Flex.Col>
+						<Flex.Col>
+							<EyeCrossed />
+						</Flex.Col>
+						<Flex.Col>
+							<Close />
+						</Flex.Col>
+						<Flex.Col>
+							<CloseOutlined />
+						</Flex.Col>
+						<Flex.Col>
+							<Hamburger />
+						</Flex.Col>
+						<Flex.Col>
+							<Minus />
 						</Flex.Col>
 						<Flex.Col>
 							<MoreVertical />
@@ -123,16 +171,10 @@ const IconsPage = () => {
 							<Plus />
 						</Flex.Col>
 						<Flex.Col>
-							<Search />
-						</Flex.Col>
-						<Flex.Col>
 							<Settings />
 						</Flex.Col>
 						<Flex.Col>
-							<Sun />
-						</Flex.Col>
-						<Flex.Col>
-							<Warning />
+							<MailOpened />
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>

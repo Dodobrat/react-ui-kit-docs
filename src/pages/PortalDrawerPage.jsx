@@ -36,7 +36,7 @@ const PortalDrawerPage = () => {
 					<Card.Header
 						actions={
 							<Button size='xs' pigment={null} onClick={closeModalA}>
-								<Close className='btn__icon' />
+								<Close className='dui__icon' />
 							</Button>
 						}>
 						Portal Modal
@@ -53,7 +53,7 @@ const PortalDrawerPage = () => {
 					<Card.Header
 						actions={
 							<Button size='xs' pigment={null} onClick={closeModalB}>
-								<Close className='btn__icon' />
+								<Close className='dui__icon' />
 							</Button>
 						}>
 						Portal Modal
