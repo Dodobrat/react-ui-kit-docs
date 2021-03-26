@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { CaretUp, BackTop, Button, Container, useDarkMode, Sun, Moon, DragScroll } from "@dodobrat/react-ui-kit";
-import { Switch, Route, NavLink } from "react-router-dom";
+import { CaretUp, BackTop, Button, Container, useDarkMode, Sun, Moon, DragScroll, GlobalContext } from "@dodobrat/react-ui-kit";
+import { Switch, Route, NavLink, Redirect } from "react-router-dom";
 import AlertsPage from "./pages/AlertsPage";
 import BadgePage from "./pages/BadgePage";
 import BreadcrumbsPage from "./pages/BreadcrumbsPage";
@@ -19,13 +19,34 @@ import TabsPage from "./pages/TabsPage";
 import TypographyPage from "./pages/TypographyPage";
 import FormsPage from "./pages/FormsPage";
 import InputsPage from "./pages/InputsPage";
+import { useContext } from "react";
 
 const App = () => {
 	const [dark, setDark] = useDarkMode();
 
+	const {
+		appConfig: { setConfig },
+	} = useContext(GlobalContext);
+
 	useEffect(() => {
 		console.log("render");
 	});
+
+	useEffect(() => {
+		setConfig({
+			flat: false,
+			rounded: false,
+			defaultPigment: "primary",
+			defaultPigmentColor: null,
+			size: "md",
+			// withRipple: true,
+			//Component Specific
+			btnSpongy: true,
+		});
+		return () => {
+			setConfig({});
+		};
+	}, [setConfig]);
 
 	return (
 		<Container>
@@ -121,6 +142,7 @@ const App = () => {
 				<Route path='/typography' component={TypographyPage} />
 				<Route path='/inputs' component={InputsPage} />
 				<Route path='/forms' component={FormsPage} />
+				<Redirect to='/alerts' />
 			</Switch>
 
 			<div>

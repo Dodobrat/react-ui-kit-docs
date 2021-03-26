@@ -19,6 +19,17 @@ const InputsPanel = () => {
 			<InputComponent placeholder='Seamless Only Input' seamless />
 			<h1>Input</h1>
 			<Input
+				preffix={<Settings className='dui__icon' />}
+				suffix={<Settings className='dui__icon' />}
+				defaultValue='Seamless Input'
+				isClearable
+				seamless
+				isLoading
+				disableWhileLoading={false}
+				placeholder='Input text here'
+			/>
+			<br />
+			<Input
 				type='password'
 				preffix={<Settings className='dui__icon' />}
 				suffix={<Settings className='dui__icon' />}
@@ -88,6 +99,8 @@ const InputsPanel = () => {
 			<Input type='file' />
 			<h3>Tel</h3>
 			<Input type='tel' />
+			<h3>Range</h3>
+			<Input type='range' />
 			<h3>Color</h3>
 			<Input type='color' defaultValue='#123456' />
 			<h3>URL</h3>

@@ -17,6 +17,16 @@ const TextAreasPanel = () => {
 				isClearable
 				disableWhileLoading={false}
 				isLoading
+				seamless
+				maxLength='250'
+				placeholder='Enter message here'
+				defaultValue='Lorem ipsum, dolor sit amet consectetur adipisicing elit.'></TextArea>
+			<br />
+			<TextArea
+				pigment='info'
+				isClearable
+				disableWhileLoading={false}
+				isLoading
 				flat
 				maxLength='500'
 				placeholder='Enter message here'

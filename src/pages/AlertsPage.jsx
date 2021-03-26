@@ -39,6 +39,28 @@ const AlertsPage = () => {
 			</Alert>
 			<br />
 
+			<h1>Alert Size</h1>
+			<Alert size='xs' isDismissible>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
+			<br />
+			<Alert size='sm' isDismissible>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
+			<br />
+			<Alert size='md' isDismissible>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
+			<br />
+			<Alert size='lg' isDismissible>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
+			<br />
+			<Alert size='xl' isDismissible>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
+			<br />
+
 			<h1>Alert utils</h1>
 			<Alert rounded>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
 			<br />

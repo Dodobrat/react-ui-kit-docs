@@ -109,6 +109,7 @@ const ButtonsPage = () => {
 				<Button as='div'>I am a Div</Button>
 				<Button as='span'>I am a Span</Button>
 				<Button as='code'>I am a Code elem</Button>
+				<Button as='p'>I am a P elem</Button>
 
 				<Button as={Link} to='/about'>
 					I am a React Router Link
@@ -142,17 +143,13 @@ const ButtonsPage = () => {
 				<h1>Show focus on click</h1>
 				<Button keyboardOnlyFocusRing={false}>I am a Button</Button>
 				<h1>Wide Button:</h1>
-				<Button wide pigment='primary'>
-					I am a Button
-				</Button>
+				<Button wide>I am a Button</Button>
 				<h1>Left Aligned Button:</h1>
-				<Button pigment='primary' wide leftAlignContent>
+				<Button wide leftAlignContent>
 					I am a Button
 				</Button>
 				<h1>Overflow ellipsis Button: *Parent must have Overflow: hidden</h1>
-				<Button pigment='primary' unWrapText>
-					Lorem ipsum
-				</Button>
+				<Button unWrapText>Lorem ipsum</Button>
 			</div>
 			<br />
 			<div id='btn-sizes'>

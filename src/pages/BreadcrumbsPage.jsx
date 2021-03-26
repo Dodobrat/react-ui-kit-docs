@@ -16,6 +16,37 @@ const BreadcrumbsPage = () => {
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
+			<h1>Braedcrumb Sizes</h1>
+			<Breadcrumbs size='xs'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs size='sm'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs size='md'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs size='lg'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
+			<Breadcrumbs size='xl'>
+				<Breadcrumbs.Item>App</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
+				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
+			</Breadcrumbs>
+			<br />
 			<h1>Contained Breadcrumbs (supports pigments and elevation)</h1>
 			<Breadcrumbs contained elevation='subtle'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
