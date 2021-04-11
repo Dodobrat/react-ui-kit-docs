@@ -15,7 +15,7 @@ const ButtonsPage = () => {
 				</ButtonGroup>
 				<br />
 				<br />
-				<ButtonGroup vertical rounded>
+				<ButtonGroup vertical flavor={{ base: "flat", lg: "rounded" }}>
 					<Button>test1</Button>
 					<Button pigment='danger'>test2</Button>
 					<Button>test3</Button>
@@ -23,19 +23,19 @@ const ButtonsPage = () => {
 				</ButtonGroup>
 				<br />
 				<br />
-				<ButtonGroup>
+				<ButtonGroup pigmentColor={{ base: "primary", lg: null }} pigment={{ base: null, lg: "warning" }}>
+					<Button>test1</Button>
+					<Button>test2</Button>
+				</ButtonGroup>
+				<br />
+				<br />
+				<ButtonGroup flavor='flat'>
 					<Button>test1</Button>
 					<Button pigment='danger'>test2</Button>
 				</ButtonGroup>
 				<br />
 				<br />
-				<ButtonGroup flat>
-					<Button>test1</Button>
-					<Button pigment='danger'>test2</Button>
-				</ButtonGroup>
-				<br />
-				<br />
-				<ButtonGroup rounded>
+				<ButtonGroup flavor='rounded'>
 					<Button>test1</Button>
 					<Button>test2</Button>
 					<Button pigment='danger'>test3</Button>
@@ -50,56 +50,56 @@ const ButtonsPage = () => {
 			</div>
 			<br />
 			<div id='btn-roundnes'>
-				<h1>Flat Button:</h1>
-				<Button size='xs' flat>
+				<h1>flavor='flat' Button:</h1>
+				<Button size='xs' flavor='flat'>
 					I am a Button
 				</Button>
-				<Button size='sm' flat>
+				<Button size='sm' flavor='flat'>
 					I am a Button
 				</Button>
-				<Button size='md' flat>
+				<Button size='md' flavor='flat'>
 					I am a Button
 				</Button>
-				<Button size='lg' flat>
+				<Button size='lg' flavor='flat'>
 					I am a Button
 				</Button>
-				<Button size='xl' flat>
+				<Button size='xl' flavor='flat'>
 					I am a Button
 				</Button>
-				<h1>Rounded Button:</h1>
-				<Button size='xs' rounded>
+				<h1>flavor='rounded' Button:</h1>
+				<Button size='xs' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='sm' rounded>
+				<Button size='sm' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='md' rounded>
+				<Button size='md' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='lg' rounded>
+				<Button size='lg' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='xl' rounded>
+				<Button size='xl' flavor='rounded'>
 					I am a Button
 				</Button>
 				<br />
 				<h1>Round Button:</h1>
-				<Button size='xs' round>
+				<Button size='xs' flavor='round'>
 					<Sun className='dui__icon' />
 				</Button>
-				<Button size='sm' round>
+				<Button size='sm' flavor='round'>
 					<Sun className='dui__icon' />
 				</Button>
-				<Button size='md' round>
+				<Button size='md' flavor='round'>
 					<Sun className='dui__icon' />
 				</Button>
-				<Button size='lg' round>
+				<Button size='lg' flavor='round'>
 					<Sun className='dui__icon' />
 				</Button>
-				<Button size='xl' round>
+				<Button size='xl' flavor='round'>
 					<Sun className='dui__icon' />
 				</Button>
-				<Button size='xl' round isLoading>
+				<Button size='xl' flavor='round' isLoading>
 					<Sun className='dui__icon' />
 				</Button>
 			</div>
@@ -208,7 +208,7 @@ const ButtonsPage = () => {
 				<Button pigment={null} pigmentColor='danger'>
 					I am a Button
 				</Button>
-				<Button pigment={null} pigmentColor={null}>
+				<Button pigment={null} pigmentColor='none'>
 					I am a Button
 				</Button>
 				<h1>Button Colors:</h1>
@@ -218,7 +218,7 @@ const ButtonsPage = () => {
 				<Button pigment='info'>I am a Button</Button>
 				<Button pigment='warning'>I am a Button</Button>
 				<Button pigment='danger'>I am a Button</Button>
-				<Button pigment={null}>I am a Button</Button>
+				<Button pigment='none'>I am a Button</Button>
 				<Button href='https://google.com'>Go to Google</Button>
 			</div>
 			<br />
@@ -242,7 +242,7 @@ const ButtonsPage = () => {
 				<Button pigment={null} pigmentColor='danger' isLoading>
 					I am a Button
 				</Button>
-				<Button pigment={null} pigmentColor={null} isLoading>
+				<Button pigment={null} pigmentColor='none' isLoading>
 					I am a Button
 				</Button>
 				<h1>Loading Button colors:</h1>
@@ -262,7 +262,7 @@ const ButtonsPage = () => {
 				<Button isLoading pigment='danger'>
 					I am a Button
 				</Button>
-				<Button isLoading pigment={null}>
+				<Button isLoading pigment='none'>
 					I am a Button
 				</Button>
 			</div>

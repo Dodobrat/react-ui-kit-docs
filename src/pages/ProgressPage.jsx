@@ -26,11 +26,11 @@ const ProgressPage = () => {
 			<ProgressRing max={96123} value={96123} labeled labelValue='count + %' decimals={2} pigment='danger' />
 			<br />
 			<h1>Flat ProgressRing</h1>
-			<ProgressRing max={900} value={160} labeled labelValue='count' pigment='info' flat />
+			<ProgressRing max={900} value={160} labeled labelValue='count' pigment='info' flavor='flat' />
 			<br />
 			<h1>Sizing ProgressRing</h1>
 			<ProgressRing value={randomProgress} labeled labelValue='count + %' pigment='info' decimals={2} size={140} strokeWidth={10} />
-			<ProgressRing max={900} value={160} labeled labelValue='count' pigment='info' flat size={100} strokeWidth={20} />
+			<ProgressRing max={900} value={160} labeled labelValue='count' pigment='info' flavor='flat' size={100} strokeWidth={20} />
 			<br />
 			<h1>without Track</h1>
 			<ProgressRing withTrack={false} max={900} value={160} labeled labelValue='count' pigment='info' size={100} />
@@ -57,15 +57,15 @@ const ProgressPage = () => {
 			<ProgressBar max={12345} value={4756} decimals={6} labeled pigment='danger' labelValue='count + %' />
 			<br />
 			<h1>Roundness</h1>
-			<ProgressBar max={12345} value={4756} rounded decimals={2} labeled pigment='info' labelValue='count + %' />
+			<ProgressBar max={12345} value={4756} decimals={2} labeled pigment='info' labelValue='count + %' />
 			<ProgressBar
 				max={100}
+				flavor={{ base: "flat", lg: "default" }}
 				value={randomProgress}
-				flat
 				labelAlwaysVisible
 				decimals={2}
 				labeled
-				pigment='info'
+				pigment={{ base: "info", lg: "warning" }}
 				labelValue='count + %'
 			/>
 			<br />

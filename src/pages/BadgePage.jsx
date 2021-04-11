@@ -6,14 +6,19 @@ const BadgePage = () => {
 		<div>
 			<h1>Clickable Badge</h1>
 			<Badge onClick={() => console.log("test")}>Clickable</Badge>
-			<Badge onClick={() => console.log("big test")} size='xl'>
+			<Badge
+				onClick={() => console.log("big test")}
+				size='xl'
+				className='filled'
+				pigment={{ base: null, lg: "danger" }}
+				pigmentColor={{ base: "danger", lg: null }}>
 				XL Clickable Badge
 			</Badge>
 			<br />
 			<h1>Badge Utils</h1>
-			<Badge flat>Flat Badge</Badge>
-			<Badge rounded>Rounded Badge</Badge>
-			<Badge pigment={null} elevation='medium'>
+			<Badge flavor='flat'>Flat Badge</Badge>
+			<Badge flavor='rounded'>Rounded Badge</Badge>
+			<Badge pigment='default' elevation='medium'>
 				Elevated Badge
 			</Badge>
 
@@ -32,6 +37,8 @@ const BadgePage = () => {
 			<Badge size='md'>Badge</Badge>
 			<Badge size='lg'>Badge</Badge>
 			<Badge size='xl'>Badge</Badge>
+			<p>Responsive sizing</p>
+			<Badge size={{ base: "sm", md: "lg", xl: "xs" }}>Badge</Badge>
 			<br />
 			<h1>Custom Element</h1>
 			<Badge as='div'>I am div</Badge>
@@ -39,7 +46,7 @@ const BadgePage = () => {
 			<Badge as='code'>I am code</Badge>
 			<Badge as='strong'>I am strong</Badge>
 			<h1>Button</h1>
-			<Button pigment={"secondary"} iconEnd={<Badge pigment='danger'>12</Badge>}>
+			<Button pigment='secondary' iconEnd={<Badge pigment='danger'>12</Badge>}>
 				Notification
 			</Button>
 			<br />

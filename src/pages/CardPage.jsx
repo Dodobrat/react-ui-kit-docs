@@ -37,6 +37,18 @@ const CardPage = () => {
 					</Card.Body>
 					<Card.Footer>Footer</Card.Footer>
 				</Card>
+				<br />
+				<Card style={{ maxWidth: "25rem" }} pigment={{ base: "default", md: "info", xl: "primary" }}>
+					<Card.Header>Header</Card.Header>
+					<Card.Body>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem aspernatur voluptates deserunt? Velit neque enim
+							amet magnam deserunt perferendis iure veritatis molestias itaque! Quam, in.
+						</p>
+						<Button pigment='danger'>Wassup</Button>
+					</Card.Body>
+					<Card.Footer>Footer</Card.Footer>
+				</Card>
 			</div>
 			<br />
 			<div id='card-loaders'>
@@ -53,7 +65,7 @@ const CardPage = () => {
 					<Card.Footer>Footer</Card.Footer>
 				</Card>
 				<h1>Loader Options</h1>
-				<Card style={{ maxWidth: "25rem" }} isLoading disableWhileLoading={false} flat>
+				<Card style={{ maxWidth: "25rem" }} isLoading disableWhileLoading={false} flavor='flat'>
 					<Card.Loader pigment='danger' />
 					<Card.Header>Header</Card.Header>
 					<Card.Body>
@@ -86,7 +98,7 @@ const CardPage = () => {
 			<br />
 			<div id='card-image'>
 				<h1>Image Cards</h1>
-				<Card style={{ maxWidth: "40rem" }} flat>
+				<Card style={{ maxWidth: "40rem" }} flavor='flat'>
 					<Card.Image>
 						<ImageTest />
 					</Card.Image>

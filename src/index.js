@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
-import { GlobalContextProvider } from "@dodobrat/react-ui-kit";
+import { ConfigProvider } from "@dodobrat/react-ui-kit";
 
 ReactDOM.render(
-	<GlobalContextProvider>
+	<ConfigProvider>
 		<Router>
 			<App />
 		</Router>
-	</GlobalContextProvider>,
+	</ConfigProvider>,
 	document.getElementById("root")
 );

@@ -48,80 +48,80 @@ const BreadcrumbsPage = () => {
 			</Breadcrumbs>
 			<br />
 			<h1>Contained Breadcrumbs (supports pigments and elevation)</h1>
-			<Breadcrumbs contained elevation='subtle'>
+			<Breadcrumbs pigment='default' elevation='subtle'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained pigment='primary'>
+			<Breadcrumbs pigment='primary'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained pigment='secondary' rounded>
+			<Breadcrumbs pigment='secondary' flavor='rounded'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained pigment='info' flat>
+			<Breadcrumbs pigment='info' flavor='flat'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained pigment='success'>
+			<Breadcrumbs pigment={{ base: "success", lg: null }} pigmentColor={{ base: null, lg: "success" }}>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained pigment='warning'>
+			<Breadcrumbs pigment='warning'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained pigment='danger'>
+			<Breadcrumbs pigment='danger'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
 			<h1>Custom Separators</h1>
-			<Breadcrumbs contained separator='>'>
+			<Breadcrumbs separator='>'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained separator='🤖'>
+			<Breadcrumbs separator='🤖'>
 				<Breadcrumbs.Item>
-					<Link to='/'>App</Link>
+					<Link to='/breadcrumbs/'>App</Link>
 				</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs contained separator={<BreadcrumbSeparatorTest />}>
+			<Breadcrumbs separator={<BreadcrumbSeparatorTest />}>
 				<Breadcrumbs.Item>
-					<Link to='/'>App</Link>
+					<Link to='/breadcrumbs/'>App</Link>
 				</Breadcrumbs.Item>
 				<Breadcrumbs.Item>
-					<Link to='/epic'>Epicness</Link>
+					<Link to='/breadcrumbs/epic'>Epicness</Link>
 				</Breadcrumbs.Item>
 				<Breadcrumbs.Item>
-					<Link to='/gg'>GG</Link>
+					<Link to='/breadcrumbs/gg'>GG</Link>
 				</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
 			<Switch>
-				<Route path='/epic'>
+				<Route path='/breadcrumbs/epic'>
 					<Container>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, vero?</Container>
 				</Route>
-				<Route path='/gg'>
+				<Route path='/breadcrumbs/gg'>
 					<Container>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam aperiam recusandae placeat veniam excepturi
 						suscipit voluptatem soluta libero animi, quasi adipisci, culpa molestias perspiciatis incidunt, labore fuga

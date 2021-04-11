@@ -5,8 +5,8 @@ const CollapsePage = () => {
 	return (
 		<div>
 			<h1>Flat Collapse (Accordion)</h1>
-			<Accordion onToggle={(isCollapsed) => console.log(isCollapsed)}>
-				<Collapse flat>
+			<Accordion onToggle={(isCollapsed) => console.log(isCollapsed)} flavor='flat' pigment={{ base: "info", lg: "default" }}>
+				<Collapse>
 					<Collapse.Toggle collapseIndicatorComponent={"custom"}>Collapse 1</Collapse.Toggle>
 					<Collapse.Content>
 						<p>
@@ -28,7 +28,7 @@ const CollapsePage = () => {
 						</p>
 					</Collapse.Content>
 				</Collapse>
-				<Collapse flat>
+				<Collapse>
 					<Collapse.Toggle>Collapse 2</Collapse.Toggle>
 					<Collapse.Content>
 						<p>
@@ -42,7 +42,7 @@ const CollapsePage = () => {
 						</p>
 					</Collapse.Content>
 				</Collapse>
-				<Collapse flat>
+				<Collapse>
 					<Collapse.Toggle>Collapse 3</Collapse.Toggle>
 					<Collapse.Content>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -203,7 +203,7 @@ const CollapsePage = () => {
 				</Collapse.Content>
 			</Collapse>
 			<br />
-			<Collapse isLoading disableWhileLoading={false}>
+			<Collapse isLoading disableWhileLoading={false} flavor='flat'>
 				<Collapse.Loader pigment='info' />
 				<Collapse.Toggle>Collapse 4</Collapse.Toggle>
 				<Collapse.Content>

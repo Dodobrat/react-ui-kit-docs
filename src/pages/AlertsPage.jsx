@@ -6,7 +6,7 @@ const AlertsPage = () => {
 		<div>
 			<br />
 			<h1>Alert Pigments</h1>
-			<Alert pigment={null}>
+			<Alert pigment={{ base: null, lg: "danger" }} pigmentColor={{ base: "danger", lg: null }}>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor? Ex porro omnis earum quae, ad, maxime provident
 				exercitationem animi eveniet quis debitis sapiente dicta culpa itaque quibusdam aut doloribus sit distinctio qui dolorum
 				officiis accusantium? Sunt ex, dolorum voluptas minima natus consequatur velit accusamus quo cupiditate magni nulla earum
@@ -15,6 +15,8 @@ const AlertsPage = () => {
 				Reprehenderit culpa itaque adipisci voluptates enim ad natus? Alias mollitia porro, dolorum hic optio delectus cumque id
 				eveniet ratione at soluta dignissimos eius!
 			</Alert>
+			<br />
+			<Alert pigment='default'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
 			<br />
 			<Alert pigment='primary'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
 			<br />
@@ -26,15 +28,17 @@ const AlertsPage = () => {
 			<br />
 			<Alert pigment='danger'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, repellat?</Alert>
 			<br />
-			<Alert pigment='warning'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
-			<br />
-
-			<h1>Alert Elevation</h1>
-			<Alert pigment={null} elevation='subtle'>
+			<Alert pigment={{ base: "warning", md: "info", lg: "success" }}>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
-			<Alert pigment={null} elevation='interstellar'>
+
+			<h1>Alert Elevation</h1>
+			<Alert pigment='default' elevation={{ base: "interstellar", md: "medium", xl: "subtle" }}>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
+			<br />
+			<Alert pigment='success' elevation='light'>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
@@ -60,11 +64,19 @@ const AlertsPage = () => {
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
+			<Alert size={{ base: "sm", sm: "md", lg: "lg", xl: "xl" }} isDismissible>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
+			<br />
 
 			<h1>Alert utils</h1>
-			<Alert rounded>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
+			<Alert flavor='rounded'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
 			<br />
-			<Alert flat>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
+			<Alert flavor='flat'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
+			<br />
+			<Alert flavor={{ base: "flat", md: "rounded", xl: "default" }}>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
+			</Alert>
 			<br />
 
 			<h1>Alert Close component</h1>

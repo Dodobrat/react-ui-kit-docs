@@ -6,7 +6,7 @@ const ListGroupPage = () => {
 		<div>
 			<h1>List groups / items</h1>
 			<br />
-			<ListGroup style={{ maxWidth: "30rem" }} flat pigment='secondary'>
+			<ListGroup style={{ maxWidth: "30rem" }} flavor={{ base: "flat", lg: "default" }} pigment={{ base: "secondary", lg: "info" }}>
 				<ListGroup.Header>Items Header</ListGroup.Header>
 				<ListGroup.Item>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consectetur harum sequi earum error a ipsam quia

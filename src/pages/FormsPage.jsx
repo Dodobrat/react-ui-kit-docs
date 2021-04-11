@@ -102,7 +102,7 @@ const FormsPage = () => {
 								</Flex.Col>
 								<Flex.Col style={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
 									<CheckboxComponent name='auto_logout'>Remember me</CheckboxComponent>
-									<Button type='submit' className='mlauto'>
+									<Button type='submit' className='ml--auto'>
 										Submit
 									</Button>
 								</Flex.Col>
@@ -119,7 +119,7 @@ const FormsPage = () => {
 
 			<Card>
 				<Card.Header>
-					<Heading as='h6' className='mb0'>
+					<Heading as='h6' className='mb--0'>
 						All Input Types Form submit
 					</Heading>
 				</Card.Header>
@@ -196,7 +196,7 @@ const FormsPage = () => {
 					<Button pigment='none' pigmentColor='danger'>
 						Cancel
 					</Button>
-					<Button type='submit' form='all-types-form' className='ml2'>
+					<Button type='submit' form='all-types-form' className='ml--2'>
 						Submit
 					</Button>
 				</Card.Footer>

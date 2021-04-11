@@ -10,10 +10,10 @@ const SpinnersPage = () => {
 			<SpinnerLoader size='md' pigment='info' />
 			<SpinnerLoader size='lg' pigment='success' />
 			<SpinnerLoader size='xl' />
-			<SpinnerLoader pigment={null} />
+			<SpinnerLoader size={{ base: "xl", lg: "xs" }} pigment={{ base: "default", lg: "info" }} />
 			<SpinnerLoader pigment='danger' />
 			<br />
-			<LineLoader />
+			<LineLoader pigment={{ base: "default", lg: "info" }} />
 			<br />
 			<LineLoader pigment='info' />
 			<br />

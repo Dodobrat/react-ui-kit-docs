@@ -41,7 +41,7 @@ const FlexPage = () => {
 					align='stretch'
 					justify='space-between'
 					disableNegativeSpace
-					direction={{ xs: "row", sm: "column" }}
+					direction={{ base: "row", lg: "column" }}
 					wrap='wrap-reverse'
 					style={{ maxHeight: "30rem", overflow: "auto" }}>
 					{((cols, i, len) => {
@@ -49,7 +49,7 @@ const FlexPage = () => {
 							const index = i;
 							cols.push(
 								<Flex.Col key={index} style={{ height: i % 3 === 0 ? "5rem" : "8rem" }}>
-									<Card flat style={{ height: "100%" }}>
+									<Card flavor='flat' style={{ height: "100%" }}>
 										<Card.Body>Col {index}</Card.Body>
 									</Card>
 								</Flex.Col>
@@ -65,7 +65,6 @@ const FlexPage = () => {
 					order: null | number,
 					<br /> col: null | Object(breakpoint: option) | number | 'auto',
 					<br /> offset: null | Object(breakpoint: option) | number,
-					<br /> hide: null | string(breakpoint) | boolean,
 				</p>
 				<h3>Col</h3>
 				<Flex>
@@ -73,7 +72,7 @@ const FlexPage = () => {
 						while (++i <= len) {
 							const index = i;
 							cols.push(
-								<Flex.Col key={index} col={index}>
+								<Flex.Col key={index} col={`${index}`}>
 									<Card>
 										<Card.Body>Col {index}</Card.Body>
 									</Card>
@@ -90,7 +89,7 @@ const FlexPage = () => {
 						while (++i <= len) {
 							const index = i;
 							cols.push(
-								<Flex.Col key={index} col={{ xs: 8, sm: 6, md: 4, lg: 3, xl: 2 }}>
+								<Flex.Col key={index} col={{ base: "12", xs: "8", sm: "6", md: "4", lg: "3", xl: "2", fhd: "1" }}>
 									<Card>
 										<Card.Body>Col {index}</Card.Body>
 									</Card>
@@ -106,7 +105,23 @@ const FlexPage = () => {
 						while (++i <= len) {
 							const index = i;
 							cols.push(
-								<Flex.Col key={index} offset={{ sm: index - 2, md: index - 1 }} col={1}>
+								<Flex.Col key={index} offset={12 - index >= 1 ? `${12 - index}` : null} col={`${index}`}>
+									<Card>
+										<Card.Body>Col {index}</Card.Body>
+									</Card>
+								</Flex.Col>
+							);
+						}
+						return cols;
+					})([], 0, 12)}
+				</Flex>
+				<h3>Offset Right</h3>
+				<Flex>
+					{((cols, i, len) => {
+						while (++i <= len) {
+							const index = i;
+							cols.push(
+								<Flex.Col key={index} offsetRight={12 - index >= 1 ? `${12 - index}` : null} col={`${index}`}>
 									<Card>
 										<Card.Body>Col {index}</Card.Body>
 									</Card>
@@ -122,7 +137,7 @@ const FlexPage = () => {
 						while (++i <= len) {
 							const index = i;
 							cols.push(
-								<Flex.Col key={index} hide={i % 2 === 0}>
+								<Flex.Col key={index} className={index % 2 === 0 ? "d--lg--none" : "d--base--unset"}>
 									<Card>
 										<Card.Body>Col {index}</Card.Body>
 									</Card>

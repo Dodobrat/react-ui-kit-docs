@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { CaretUp, BackTop, Button, Container, useDarkMode, Sun, Moon, DragScroll, GlobalContext } from "@dodobrat/react-ui-kit";
+import { CaretUp, BackTop, Button, Container, useDarkMode, Sun, Moon, DragScroll, useConfig } from "@dodobrat/react-ui-kit";
 import { Switch, Route, NavLink, Redirect } from "react-router-dom";
 import AlertsPage from "./pages/AlertsPage";
 import BadgePage from "./pages/BadgePage";
@@ -19,14 +19,16 @@ import TabsPage from "./pages/TabsPage";
 import TypographyPage from "./pages/TypographyPage";
 import FormsPage from "./pages/FormsPage";
 import InputsPage from "./pages/InputsPage";
-import { useContext } from "react";
+import TooltipPage from "./pages/TooltipPage";
+import TablesPage from "./pages/TablesPage";
+import DropdownsPage from "./pages/DropdownsPage";
 
 const App = () => {
 	const [dark, setDark] = useDarkMode();
 
 	const {
 		appConfig: { setConfig },
-	} = useContext(GlobalContext);
+	} = useConfig();
 
 	useEffect(() => {
 		console.log("render");
@@ -36,12 +38,9 @@ const App = () => {
 		setConfig({
 			flat: false,
 			rounded: false,
-			defaultPigment: "primary",
-			defaultPigmentColor: null,
+			pigment: "primary",
+			pigmentColor: null,
 			size: "md",
-			// withRipple: true,
-			//Component Specific
-			btnSpongy: true,
 		});
 		return () => {
 			setConfig({});
@@ -49,11 +48,11 @@ const App = () => {
 	}, [setConfig]);
 
 	return (
-		<Container>
+		<Container className='px--base--2 px--md--4' size='lg'>
 			<div>
 				<br />
 				<h1>
-					<Button onClick={() => setDark((prev) => !prev)} round pigment='secondary'>
+					<Button onClick={() => setDark((prev) => !prev)} flavor='round' pigment='secondary'>
 						{dark ? <Moon className='dui__icon' /> : <Sun className='dui__icon' />}
 					</Button>{" "}
 					{dark ? "Dark Theme" : "Light Theme"}
@@ -79,6 +78,12 @@ const App = () => {
 					<NavLink to='/cards' activeStyle={{ fontWeight: 700 }}>
 						Cards
 					</NavLink>
+					<NavLink to='/dropdowns' activeStyle={{ fontWeight: 700 }}>
+						Dropdowns
+					</NavLink>
+					<NavLink to='/tables' activeStyle={{ fontWeight: 700 }}>
+						Tables
+					</NavLink>
 					<NavLink to='/collapse' activeStyle={{ fontWeight: 700 }}>
 						Collapse
 					</NavLink>
@@ -96,6 +101,9 @@ const App = () => {
 					</NavLink>
 					<NavLink to='/portals' activeStyle={{ fontWeight: 700 }}>
 						Portals / Drawers
+					</NavLink>
+					<NavLink to='/tooltips' activeStyle={{ fontWeight: 700 }}>
+						Tooltips
 					</NavLink>
 					<NavLink to='/progress' activeStyle={{ fontWeight: 700 }}>
 						Progress
@@ -129,11 +137,15 @@ const App = () => {
 				<Route path='/breadcrumbs' component={BreadcrumbsPage} />
 				<Route path='/buttons' component={ButtonsPage} />
 				<Route path='/cards' component={CardPage} />
+				<Route path='/dropdowns' component={DropdownsPage} />
+				<Route path='/dropdowns/:option' component={DropdownsPage} />
+				<Route path='/tables' component={TablesPage} />
 				<Route path='/collapse' component={CollapsePage} />
 				<Route path='/dragscroll' component={DragScrollPage} />
 				<Route path='/flex' component={FlexPage} />
 				<Route path='/icons' component={IconsPage} />
 				<Route path='/lists' component={ListGroupPage} />
+				<Route path='/tooltips' component={TooltipPage} />
 				<Route path='/portals' component={PortalDrawerPage} />
 				<Route path='/progress' component={ProgressPage} />
 				<Route path='/skeleton' component={SkeletonPage} />

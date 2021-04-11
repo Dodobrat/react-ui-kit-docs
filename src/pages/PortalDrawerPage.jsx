@@ -1,9 +1,12 @@
 import { Button, Card, Close, Drawer, Portal } from "@dodobrat/react-ui-kit";
 import React, { useState } from "react";
+import { useRef } from "react";
 
 // PortalWrapper
 
 const PortalDrawerPage = () => {
+	const noAnimRef = useRef(null);
+
 	const [showModalA, setShowModalA] = useState(false);
 	const [showModalB, setShowModalB] = useState(false);
 
@@ -22,6 +25,8 @@ const PortalDrawerPage = () => {
 	const closeDrawerB = () => setShowDrawerB(false);
 	const openDrawerB = () => setShowDrawerB(true);
 
+	console.log(noAnimRef);
+
 	return (
 		<div>
 			<h1>Portals</h1>
@@ -31,11 +36,18 @@ const PortalDrawerPage = () => {
 
 			<br />
 
-			<Portal onClose={closeModalA} size='xl' verticalAlign='start' isOpen={showModalA}>
+			<Portal
+				onClose={closeModalA}
+				size='xl'
+				verticalAlign='start'
+				innerClassName='py--4 px--2'
+				animation='none'
+				ref={noAnimRef}
+				isOpen={showModalA}>
 				<Card>
 					<Card.Header
 						actions={
-							<Button size='xs' pigment={null} onClick={closeModalA}>
+							<Button size='xs' pigment='none' onClick={closeModalA}>
 								<Close className='dui__icon' />
 							</Button>
 						}>
@@ -52,7 +64,7 @@ const PortalDrawerPage = () => {
 				<Card>
 					<Card.Header
 						actions={
-							<Button size='xs' pigment={null} onClick={closeModalB}>
+							<Button size='xs' pigment='none' onClick={closeModalB}>
 								<Close className='dui__icon' />
 							</Button>
 						}>
@@ -74,7 +86,7 @@ const PortalDrawerPage = () => {
 
 			<br />
 
-			<Drawer onClose={closeDrawerA} size='xl' isOpen={showDrawerA} position='top'>
+			<Drawer onClose={closeDrawerA} size='xl' isOpen={showDrawerA} animation='none'>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur minima totam non nulla iure blanditiis, amet
 					officiis architecto fugiat ducimus sapiente similique id? Sapiente fugiat veniam vitae commodi facilis nemo autem
@@ -93,7 +105,7 @@ const PortalDrawerPage = () => {
 				</p>
 			</Drawer>
 
-			<Drawer onClose={closeDrawerB} isOpen={showDrawerB} position='right'>
+			<Drawer onClose={closeDrawerB} isOpen={showDrawerB} position='right' size={{ base: "sm", lg: "xl" }}>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur minima totam non nulla iure blanditiis, amet
 					officiis architecto fugiat ducimus sapiente similique id? Sapiente fugiat veniam vitae commodi facilis nemo autem

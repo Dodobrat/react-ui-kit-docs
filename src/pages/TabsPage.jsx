@@ -67,7 +67,11 @@ const TabsPage = () => {
 			<div id='vertical-tabs'>
 				<br />
 				<h2>Vertical Tabs</h2>
-				<Tabs activeTab={2} orientation='vertical' pigment='success' flat>
+				<Tabs
+					activeTab={2}
+					orientation='vertical'
+					pigment={{ base: "success", lg: "info" }}
+					flavor={{ base: "flat", lg: "default" }}>
 					<Tabs.Panel tab={"Tab 1"}>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
 					<Tabs.Panel tab={"Tab 2"}>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
 					<Tabs.Panel tab={"Tab 3"}>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
