@@ -21,7 +21,7 @@ import FormsPage from "./pages/FormsPage";
 import InputsPage from "./pages/InputsPage";
 import TooltipPage from "./pages/TooltipPage";
 import TablesPage from "./pages/TablesPage";
-import DropdownsPage from "./pages/DropdownsPage";
+// import DropdownsPage from "./pages/DropdownsPage";
 
 const App = () => {
 	const [dark, setDark] = useDarkMode();
@@ -36,11 +36,10 @@ const App = () => {
 
 	useEffect(() => {
 		setConfig({
-			flat: false,
-			rounded: false,
-			pigment: "primary",
-			pigmentColor: null,
-			size: "md",
+			flavor: "default",
+			// pigment: "primary",
+			// pigmentColor: null,
+			// size: "md",
 		});
 		return () => {
 			setConfig({});
@@ -78,9 +77,9 @@ const App = () => {
 					<NavLink to='/cards' activeStyle={{ fontWeight: 700 }}>
 						Cards
 					</NavLink>
-					<NavLink to='/dropdowns' activeStyle={{ fontWeight: 700 }}>
+					{/* <NavLink to='/dropdowns' activeStyle={{ fontWeight: 700 }}>
 						Dropdowns
-					</NavLink>
+					</NavLink> */}
 					<NavLink to='/tables' activeStyle={{ fontWeight: 700 }}>
 						Tables
 					</NavLink>
@@ -137,8 +136,8 @@ const App = () => {
 				<Route path='/breadcrumbs' component={BreadcrumbsPage} />
 				<Route path='/buttons' component={ButtonsPage} />
 				<Route path='/cards' component={CardPage} />
-				<Route path='/dropdowns' component={DropdownsPage} />
-				<Route path='/dropdowns/:option' component={DropdownsPage} />
+				{/* <Route path='/dropdowns' component={DropdownsPage} /> */}
+				{/* <Route path='/dropdowns/:option' component={DropdownsPage} /> */}
 				<Route path='/tables' component={TablesPage} />
 				<Route path='/collapse' component={CollapsePage} />
 				<Route path='/dragscroll' component={DragScrollPage} />

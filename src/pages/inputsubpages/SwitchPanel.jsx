@@ -35,7 +35,7 @@ const SwitchPanel = () => {
 			<SwitchComponent size='xl'>Only Component Size</SwitchComponent>
 			<br />
 			<br />
-			<SwitchComponent size='xl' flat>
+			<SwitchComponent size='xl' flavor='flat'>
 				Only Component Flat + Size
 			</SwitchComponent>
 			<br />
@@ -63,7 +63,7 @@ const SwitchPanel = () => {
 			<Switch
 				preffix={<Settings className='dui__icon' />}
 				suffix={<Settings className='dui__icon' />}
-				rounded
+				flavor='rounded'
 				disableWhileLoading={false}
 				isLoading>
 				Rounded
@@ -72,7 +72,7 @@ const SwitchPanel = () => {
 			<Switch
 				preffix={<Settings className='dui__icon' />}
 				suffix={<Settings className='dui__icon' />}
-				flat
+				flavor='flat'
 				disableWhileLoading={false}
 				isLoading>
 				Flat

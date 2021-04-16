@@ -35,7 +35,12 @@ const SwitchGroupPanel = () => {
 			<SwitchGroup options={switchGroupOptions} name='gender' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
-			<SwitchGroup options={switchGroupOptions} name='gender1' pigment='secondary' activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup
+				options={switchGroupOptions}
+				name='gender1'
+				pigment={{ base: "info", lg: "secondary" }}
+				activeOption={switchGroupOptions[0].value}
+			/>
 			<br />
 			<br />
 			<h1>SwitchGroup Sizes</h1>
@@ -69,10 +74,10 @@ const SwitchGroupPanel = () => {
 			<SwitchGroup options={switchGroupOptions} name='gender9' seamless activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
-			<SwitchGroup options={switchGroupOptions} name='gender10' rounded activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup options={switchGroupOptions} name='gender10' flavor='rounded' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
-			<SwitchGroup options={switchGroupOptions} name='gender11' flat activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup options={switchGroupOptions} name='gender11' flavor='flat' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
 		</div>

@@ -72,13 +72,13 @@ const BreadcrumbsPage = () => {
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs pigment={{ base: "success", lg: null }} pigmentColor={{ base: null, lg: "success" }}>
+			<Breadcrumbs pigment={{ base: "success" }}>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs pigment='warning'>
+			<Breadcrumbs pigment='warning' flavor='rounded'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>

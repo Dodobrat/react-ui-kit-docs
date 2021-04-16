@@ -5,7 +5,7 @@ const InputGroupsPanel = () => {
 	return (
 		<div>
 			<h1>Input Group</h1>
-			<InputGroup pigment='info' rounded>
+			<InputGroup pigment='info' flavor='rounded'>
 				<Button>Testing</Button>
 				<InputComponent placeholder='Enter text' />
 				<InputComponent type='range' seamless={false} disabled />
@@ -15,7 +15,7 @@ const InputGroupsPanel = () => {
 				<RadioComponent seamless={false}>Radio me</RadioComponent>
 			</InputGroup>
 			<br />
-			<InputGroup pigment='secondary' flat>
+			<InputGroup pigment='secondary' flavor='flat'>
 				<Button>Testing</Button>
 				<InputComponent placeholder='Enter text' />
 				<InputComponent type='number' pigment='success' placeholder='Enter Number' />

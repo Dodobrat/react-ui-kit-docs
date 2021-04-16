@@ -8,7 +8,7 @@ const TooltipPage = () => {
 	const [controlledTooltip, setControlledTooltip] = useState(true);
 
 	const TooltipContent = () => {
-		return <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>;
+		return <p className='mb--0'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>;
 	};
 
 	return (
@@ -28,6 +28,11 @@ const TooltipPage = () => {
 			</Tooltip>
 			<br />
 			<h1>Tooltip Sizes</h1>
+			<Tooltip content={"I am tooltip"}>
+				<span>Random Tooltip</span>
+			</Tooltip>
+			<br />
+			<br />
 			<Tooltip content={<TooltipContent />} size='xs'>
 				<Button>XS Tooltip</Button>
 			</Tooltip>
@@ -60,10 +65,10 @@ const TooltipPage = () => {
 			<Tooltip content={<TooltipContent />} elevation='subtle' pigment='warning'>
 				<Button className='mr--2'>Elevation + Pigment Tooltip</Button>
 			</Tooltip>
-			<Tooltip content={<TooltipContent />} rounded>
+			<Tooltip content={<TooltipContent />} flavor='rounded'>
 				<Button className='mr--2'>Rounded Tooltip</Button>
 			</Tooltip>
-			<Tooltip content={<TooltipContent />} flat>
+			<Tooltip content={<TooltipContent />} flavor='flat'>
 				<Button className='mr--2'>Flat Tooltip</Button>
 			</Tooltip>
 			<Tooltip content={<TooltipContent />} spacing={100}>

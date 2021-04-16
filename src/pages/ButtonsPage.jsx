@@ -102,6 +102,25 @@ const ButtonsPage = () => {
 				<Button size='xl' flavor='round' isLoading>
 					<Sun className='dui__icon' />
 				</Button>
+				<h1>Square Button:</h1>
+				<Button size='xs' flavor='square'>
+					<Sun className='dui__icon' />
+				</Button>
+				<Button size='sm' flavor='square'>
+					<Sun className='dui__icon' />
+				</Button>
+				<Button size='md' flavor='square'>
+					<Sun className='dui__icon' />
+				</Button>
+				<Button size='lg' flavor='square'>
+					<Sun className='dui__icon' />
+				</Button>
+				<Button size='xl' flavor='square'>
+					<Sun className='dui__icon' />
+				</Button>
+				<Button size='xl' flavor='square' isLoading>
+					<Sun className='dui__icon' />
+				</Button>
 			</div>
 			<br />
 			<div id='btn-utils'>

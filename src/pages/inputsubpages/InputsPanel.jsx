@@ -12,7 +12,7 @@ const InputsPanel = () => {
 	return (
 		<div>
 			<h1>Input Component (Limited customization)</h1>
-			<InputComponent placeholder='XL Only Input' size='xl' flat pigment='info' />
+			<InputComponent placeholder='XL Only Input' size='xl' flavor='flat' pigment='info' />
 			<br />
 			<InputComponent placeholder='Default Only Input' />
 			<br />
@@ -39,9 +39,9 @@ const InputsPanel = () => {
 				placeholder='Input text here'
 			/>
 			<br />
-			<Input flat />
+			<Input flavor='flat' />
 			<br />
-			<Input rounded />
+			<Input flavor='rounded' />
 			<br />
 			<h1>Input sizes</h1>
 			<Input

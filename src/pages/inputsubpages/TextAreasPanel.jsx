@@ -5,7 +5,7 @@ const TextAreasPanel = () => {
 	return (
 		<div>
 			<h1>TextArea Component (Limited customization)</h1>
-			<TextAreaComponent placeholder='XL Only Input' size='xl' flat pigment='info' />
+			<TextAreaComponent placeholder='XL Only Input' size='xl' flavor='flat' pigment='info' />
 			<br />
 			<TextAreaComponent placeholder='Default Only Input' />
 			<br />
@@ -27,7 +27,7 @@ const TextAreasPanel = () => {
 				isClearable
 				disableWhileLoading={false}
 				isLoading
-				flat
+				flavor='flat'
 				maxLength='500'
 				placeholder='Enter message here'
 				defaultValue='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eum distinctio doloribus magnam alias ex. Recusandae at

@@ -12,7 +12,7 @@ const SelectPanel = () => {
 	return (
 		<div>
 			<h1>Select Component (Limited customization)</h1>
-			<SelectComponent size='xl' flat pigment='info'>
+			<SelectComponent size='xl' flavor='flat' pigment='info'>
 				<option value='' disabled>
 					Select your option
 				</option>
@@ -76,7 +76,7 @@ const SelectPanel = () => {
 				<option value='opt4'>Option 4</option>
 			</Select>
 			<br />
-			<Select flat>
+			<Select flavor='flat'>
 				<option value='' disabled>
 					Select your option
 				</option>
@@ -86,7 +86,7 @@ const SelectPanel = () => {
 				<option value='opt4'>Option 4</option>
 			</Select>
 			<br />
-			<Select rounded>
+			<Select flavor='rounded'>
 				<option value='' disabled>
 					Select your option
 				</option>

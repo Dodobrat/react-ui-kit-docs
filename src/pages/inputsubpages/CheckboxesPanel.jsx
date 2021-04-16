@@ -32,7 +32,7 @@ const CheckboxesPanel = () => {
 			<CheckboxComponent size='xl'>Only Component Size</CheckboxComponent>
 			<br />
 			<br />
-			<CheckboxComponent size='xl' flat>
+			<CheckboxComponent size='xl' flavor='flat'>
 				Only Component Flat + Size
 			</CheckboxComponent>
 			<br />
@@ -60,7 +60,7 @@ const CheckboxesPanel = () => {
 			<Checkbox
 				preffix={<Settings className='dui__icon' />}
 				suffix={<Settings className='dui__icon' />}
-				rounded
+				flavor='rounded'
 				disableWhileLoading={false}
 				isLoading>
 				Rounded
@@ -69,7 +69,7 @@ const CheckboxesPanel = () => {
 			<Checkbox
 				preffix={<Settings className='dui__icon' />}
 				suffix={<Settings className='dui__icon' />}
-				flat
+				flavor='flat'
 				disableWhileLoading={false}
 				isLoading>
 				Flat

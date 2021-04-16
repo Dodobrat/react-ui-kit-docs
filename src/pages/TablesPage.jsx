@@ -122,7 +122,7 @@ const TablesPage = () => {
 			<h1>Condensed</h1>
 			<TableComponent condensed />
 			<h1>Condensed + bordered + flavor='flat'</h1>
-			<TableComponent condensed bordered flavor='flat' />
+			<TableComponent condensed bordered />
 			<h1>Bordered + Flat</h1>
 			<TableComponent bordered flavor='flat' />
 			<h1>Flat</h1>
@@ -130,7 +130,7 @@ const TablesPage = () => {
 			<h1>Pigments</h1>
 			<TableComponent pigment='info' />
 			<br />
-			<TableComponent pigment='success' flavor='flat' bordered />
+			<TableComponent pigment={{ base: "success", lg: "default" }} flavor={{ base: "flat", lg: "default" }} bordered />
 			<h1>Sizes</h1>
 			<TableComponent size='xs' />
 			<br />
@@ -158,7 +158,7 @@ const TablesPage = () => {
 									<Input type='search' size='sm' placeholder='Search By Position' />
 								</Flex.Col>
 								<Flex.Col className='d--flex'>
-									<button className='dui__btn dui__btn--sm ml--auto mr--sm--2 mr--base--4 bg--danger bgtext--danger d--block w--base--50 w--sm--auto'>
+									<button className='dui__btn flavor--default dui__btn--sm ml--auto mr--sm--2 mr--base--4 bg--danger bgtext--danger d--block w--base--50 w--sm--auto'>
 										Export
 									</button>
 									<Button size='sm' className='w--base--50 w--sm--auto'>
@@ -167,7 +167,7 @@ const TablesPage = () => {
 								</Flex.Col>
 							</Flex>
 						</Flex.Col>
-						<Flex.Col col={12}>
+						<Flex.Col col='12'>
 							<TableComponent elevation='none' />
 						</Flex.Col>
 					</Flex>

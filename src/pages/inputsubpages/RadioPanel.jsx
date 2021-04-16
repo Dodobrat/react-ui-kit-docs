@@ -35,7 +35,7 @@ const RadioPanel = () => {
 			<RadioComponent size='xl'>Only Component Size</RadioComponent>
 			<br />
 			<br />
-			<RadioComponent size='xl' flat>
+			<RadioComponent size='xl' flavor='flat'>
 				Only Component Flat + Size
 			</RadioComponent>
 			<br />
@@ -61,7 +61,7 @@ const RadioPanel = () => {
 			<Radio
 				preffix={<Settings className='dui__icon' />}
 				suffix={<Settings className='dui__icon' />}
-				rounded
+				flavor='rounded'
 				disableWhileLoading={false}
 				isLoading>
 				Rounded
@@ -70,7 +70,7 @@ const RadioPanel = () => {
 			<Radio
 				preffix={<Settings className='dui__icon' />}
 				suffix={<Settings className='dui__icon' />}
-				flat
+				flavor='flat'
 				disableWhileLoading={false}
 				isLoading>
 				Flat

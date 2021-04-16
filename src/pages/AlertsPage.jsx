@@ -6,7 +6,7 @@ const AlertsPage = () => {
 		<div>
 			<br />
 			<h1>Alert Pigments</h1>
-			<Alert pigment={{ base: null, lg: "danger" }} pigmentColor={{ base: "danger", lg: null }}>
+			<Alert pigment={{ base: null, lg: "danger" }} pigmentColor={{ base: "danger", lg: null }} className='filled'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor? Ex porro omnis earum quae, ad, maxime provident
 				exercitationem animi eveniet quis debitis sapiente dicta culpa itaque quibusdam aut doloribus sit distinctio qui dolorum
 				officiis accusantium? Sunt ex, dolorum voluptas minima natus consequatur velit accusamus quo cupiditate magni nulla earum
