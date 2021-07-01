@@ -1,4 +1,4 @@
-import { Checkbox, CheckboxComponent, Settings } from "@dodobrat/react-ui-kit";
+import { Checkbox, CheckboxComponent, IconSettings } from "@dodobrat/react-ui-kit";
 import React, { useEffect, useRef, useState } from "react";
 
 const CheckboxesPanel = () => {
@@ -29,10 +29,10 @@ const CheckboxesPanel = () => {
 			</CheckboxComponent>
 			<br />
 			<br />
-			<CheckboxComponent size='xl'>Only Component Size</CheckboxComponent>
+			<CheckboxComponent sizing='xl'>Only Component Size</CheckboxComponent>
 			<br />
 			<br />
-			<CheckboxComponent size='xl' flavor='flat'>
+			<CheckboxComponent sizing='xl' flavor='flat'>
 				Only Component Flat + Size
 			</CheckboxComponent>
 			<br />
@@ -49,8 +49,8 @@ const CheckboxesPanel = () => {
 			<br />
 			<h1>Checkbox styling</h1>
 			<Checkbox
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				pigment='success'
 				disableWhileLoading={false}
 				isLoading>
@@ -58,8 +58,8 @@ const CheckboxesPanel = () => {
 			</Checkbox>
 			<br />
 			<Checkbox
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				flavor='rounded'
 				disableWhileLoading={false}
 				isLoading>
@@ -67,8 +67,8 @@ const CheckboxesPanel = () => {
 			</Checkbox>
 			<br />
 			<Checkbox
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				flavor='flat'
 				disableWhileLoading={false}
 				isLoading>
@@ -76,9 +76,9 @@ const CheckboxesPanel = () => {
 			</Checkbox>
 			<br />
 			<Checkbox
-				size='xl'
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				sizing='xl'
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				isLoading
 				seamless
 				disableWhileLoading={false}>
@@ -86,9 +86,9 @@ const CheckboxesPanel = () => {
 			</Checkbox>
 			<br />
 			<Checkbox
-				size='xl'
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				sizing='xl'
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				isLoading
 				disableWhileLoading={false}>
 				XL size

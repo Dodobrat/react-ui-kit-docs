@@ -1,4 +1,4 @@
-import { Settings, Radio, RadioComponent } from "@dodobrat/react-ui-kit";
+import { IconSettings, Radio, RadioComponent } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -32,10 +32,10 @@ const RadioPanel = () => {
 			</RadioComponent>
 			<br />
 			<br />
-			<RadioComponent size='xl'>Only Component Size</RadioComponent>
+			<RadioComponent sizing='xl'>Only Component Size</RadioComponent>
 			<br />
 			<br />
-			<RadioComponent size='xl' flavor='flat'>
+			<RadioComponent sizing='xl' flavor='flat'>
 				Only Component Flat + Size
 			</RadioComponent>
 			<br />
@@ -50,8 +50,8 @@ const RadioPanel = () => {
 			<br />
 			<h1>Radio styling</h1>
 			<Radio
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				pigment='success'
 				disableWhileLoading={false}
 				isLoading>
@@ -59,8 +59,8 @@ const RadioPanel = () => {
 			</Radio>
 			<br />
 			<Radio
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				flavor='rounded'
 				disableWhileLoading={false}
 				isLoading>
@@ -68,8 +68,8 @@ const RadioPanel = () => {
 			</Radio>
 			<br />
 			<Radio
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				flavor='flat'
 				disableWhileLoading={false}
 				isLoading>
@@ -77,9 +77,9 @@ const RadioPanel = () => {
 			</Radio>
 			<br />
 			<Radio
-				size='xl'
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				sizing='xl'
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				isLoading
 				seamless
 				disableWhileLoading={false}>
@@ -87,9 +87,9 @@ const RadioPanel = () => {
 			</Radio>
 			<br />
 			<Radio
-				size='xl'
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				sizing='xl'
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				isLoading
 				disableWhileLoading={false}>
 				XL size

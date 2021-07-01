@@ -29,14 +29,14 @@ const ProgressPage = () => {
 			<ProgressRing max={900} value={160} labeled labelValue='count' pigment='info' flavor='flat' />
 			<br />
 			<h1>Sizing ProgressRing</h1>
-			<ProgressRing value={randomProgress} labeled labelValue='count + %' pigment='info' decimals={2} size={140} strokeWidth={10} />
-			<ProgressRing max={900} value={160} labeled labelValue='count' pigment='info' flavor='flat' size={100} strokeWidth={20} />
+			<ProgressRing value={randomProgress} labeled labelValue='count + %' pigment='info' decimals={2} sizing={140} strokeWidth={10} />
+			<ProgressRing max={900} value={160} labeled labelValue='count' pigment='info' flavor='flat' sizing={100} strokeWidth={20} />
 			<br />
 			<h1>without Track</h1>
-			<ProgressRing withTrack={false} max={900} value={160} labeled labelValue='count' pigment='info' size={100} />
+			<ProgressRing withTrack={false} max={900} value={160} labeled labelValue='count' pigment='info' sizing={100} />
 			<br />
 			<h1>Counter Clockwise</h1>
-			<ProgressRing counterClockWise max={900} value={160} labeled labelValue='count + %' pigment='info' size={100} />
+			<ProgressRing counterClockWise max={900} value={160} labeled labelValue='count + %' pigment='info' sizing={100} />
 			<br />
 			<h1>No Label</h1>
 			<ProgressBar value={10} />

@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.scss";
+import "./css/index.scss";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
-import { ConfigProvider } from "@dodobrat/react-ui-kit";
+import { AdminLayoutProvider, ConfigProvider } from "@dodobrat/react-ui-kit";
+
+const presets = {
+	flavor: "flat",
+};
 
 ReactDOM.render(
-	<ConfigProvider>
+	<ConfigProvider config={presets} darkModeConfig={{ localStorageKey: "demo-dark-theme" }}>
 		<Router>
-			<App />
+			<AdminLayoutProvider>
+				<App />
+			</AdminLayoutProvider>
 		</Router>
 	</ConfigProvider>,
 	document.getElementById("root")

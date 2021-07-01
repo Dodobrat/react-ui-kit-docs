@@ -5,12 +5,12 @@ const SpinnersPage = () => {
 	return (
 		<div>
 			<h1>Loaders / Spinners</h1>
-			<SpinnerLoader size='xs' />
-			<SpinnerLoader size='sm' pigment='danger' />
-			<SpinnerLoader size='md' pigment='info' />
-			<SpinnerLoader size='lg' pigment='success' />
-			<SpinnerLoader size='xl' />
-			<SpinnerLoader size={{ base: "xl", lg: "xs" }} pigment={{ base: "default", lg: "info" }} />
+			<SpinnerLoader sizing='xs' />
+			<SpinnerLoader sizing='sm' pigment='danger' />
+			<SpinnerLoader sizing='md' pigment='info' />
+			<SpinnerLoader sizing='lg' pigment='success' />
+			<SpinnerLoader sizing='xl' />
+			<SpinnerLoader sizing={{ base: "xl", lg: "xs" }} pigment={{ base: "default", lg: "info" }} />
 			<SpinnerLoader pigment='danger' />
 			<br />
 			<LineLoader pigment={{ base: "default", lg: "info" }} />

@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Completed, Container, Sun } from "@dodobrat/react-ui-kit";
+import { Button, ButtonGroup, IconCompleted, Container, IconSun } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { Link, NavLink, Route, Switch } from "react-router-dom";
 
@@ -51,75 +51,75 @@ const ButtonsPage = () => {
 			<br />
 			<div id='btn-roundnes'>
 				<h1>flavor='flat' Button:</h1>
-				<Button size='xs' flavor='flat'>
+				<Button sizing='xs' flavor='flat' pigment='secondary' hoverPigment='primary'>
 					I am a Button
 				</Button>
-				<Button size='sm' flavor='flat'>
+				<Button sizing='sm' flavor='flat' pigment='warning' hoverPigment='danger' activePigment='info' active>
 					I am a Button
 				</Button>
-				<Button size='md' flavor='flat'>
+				<Button sizing='md' flavor='flat'>
 					I am a Button
 				</Button>
-				<Button size='lg' flavor='flat'>
+				<Button sizing='lg' flavor='flat'>
 					I am a Button
 				</Button>
-				<Button size='xl' flavor='flat'>
+				<Button sizing='xl' flavor='flat'>
 					I am a Button
 				</Button>
 				<h1>flavor='rounded' Button:</h1>
-				<Button size='xs' flavor='rounded'>
+				<Button sizing='xs' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='sm' flavor='rounded'>
+				<Button sizing='sm' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='md' flavor='rounded'>
+				<Button sizing='md' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='lg' flavor='rounded'>
+				<Button sizing='lg' flavor='rounded'>
 					I am a Button
 				</Button>
-				<Button size='xl' flavor='rounded'>
+				<Button sizing='xl' flavor='rounded'>
 					I am a Button
 				</Button>
 				<br />
 				<h1>Round Button:</h1>
-				<Button size='xs' flavor='round'>
-					<Sun className='dui__icon' />
+				<Button sizing='xs' flavor='round'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='sm' flavor='round'>
-					<Sun className='dui__icon' />
+				<Button sizing='sm' flavor='round'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='md' flavor='round'>
-					<Sun className='dui__icon' />
+				<Button sizing='md' flavor='round'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='lg' flavor='round'>
-					<Sun className='dui__icon' />
+				<Button sizing='lg' flavor='round'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='xl' flavor='round'>
-					<Sun className='dui__icon' />
+				<Button sizing='xl' flavor='round'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='xl' flavor='round' isLoading>
-					<Sun className='dui__icon' />
+				<Button sizing='xl' flavor='round' isLoading>
+					<IconSun className='dui__icon' />
 				</Button>
 				<h1>Square Button:</h1>
-				<Button size='xs' flavor='square'>
-					<Sun className='dui__icon' />
+				<Button sizing='xs' flavor='square'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='sm' flavor='square'>
-					<Sun className='dui__icon' />
+				<Button sizing='sm' flavor='square'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='md' flavor='square'>
-					<Sun className='dui__icon' />
+				<Button sizing='md' flavor='square'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='lg' flavor='square'>
-					<Sun className='dui__icon' />
+				<Button sizing='lg' flavor='square'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='xl' flavor='square'>
-					<Sun className='dui__icon' />
+				<Button sizing='xl' flavor='square'>
+					<IconSun className='dui__icon' />
 				</Button>
-				<Button size='xl' flavor='square' isLoading>
-					<Sun className='dui__icon' />
+				<Button sizing='xl' flavor='square' isLoading>
+					<IconSun className='dui__icon' />
 				</Button>
 			</div>
 			<br />
@@ -173,36 +173,36 @@ const ButtonsPage = () => {
 			<br />
 			<div id='btn-sizes'>
 				<h1>Button sizes:</h1>
-				<Button size='xs'>
-					<Completed />I am a XSmall Button
+				<Button sizing='xs'>
+					<IconCompleted />I am a XSmall Button
 				</Button>
-				<Button size='sm'>
-					<Completed />I am a Small Button
+				<Button sizing='sm'>
+					<IconCompleted />I am a Small Button
 				</Button>
-				<Button size='md'>
-					<Completed />I am a Medium Button
+				<Button sizing='md'>
+					<IconCompleted />I am a Medium Button
 				</Button>
-				<Button size='lg'>
-					<Completed />I am a Large Button
+				<Button sizing='lg'>
+					<IconCompleted />I am a Large Button
 				</Button>
-				<Button size='xl'>
-					<Completed />I am a XLarge Button
+				<Button sizing='xl'>
+					<IconCompleted />I am a XLarge Button
 				</Button>
 				<br />
 				<h1>Loading sizes:</h1>
-				<Button isLoading size='xs'>
+				<Button isLoading sizing='xs'>
 					I am a XSmall Button
 				</Button>
-				<Button isLoading size='sm'>
+				<Button isLoading sizing='sm'>
 					I am a Small Button
 				</Button>
-				<Button isLoading size='md'>
+				<Button isLoading sizing='md'>
 					I am a Medium Button
 				</Button>
-				<Button isLoading size='lg'>
+				<Button isLoading sizing='lg'>
 					I am a Large Button
 				</Button>
-				<Button isLoading size='xl'>
+				<Button isLoading sizing='xl'>
 					I am a XLarge Button
 				</Button>
 			</div>

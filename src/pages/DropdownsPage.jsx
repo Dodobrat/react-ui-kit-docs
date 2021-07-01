@@ -1,12 +1,12 @@
 import React from "react";
-import { Button, Dropdown } from "@dodobrat/react-ui-kit";
-import { Link } from "react-router-dom";
+// import { Button, Dropdown } from "@dodobrat/react-ui-kit";
+// import { Link } from "react-router-dom";
 
 const DropdownsPage = () => {
 	return (
 		<div>
 			<h1>Dropdown Default (Menu)</h1>
-			<Dropdown>
+			{/* <Dropdown>
 				<Dropdown.Toggle as={Button} pigment='secondary'>
 					Toggle bro
 				</Dropdown.Toggle>
@@ -21,14 +21,14 @@ const DropdownsPage = () => {
 					<Dropdown.Separator />
 					<Dropdown.Item as='li'>Dropdown Item 3</Dropdown.Item>
 				</Dropdown.Menu>
-			</Dropdown>
+			</Dropdown> */}
 			<h1>Dropdown Default (Body - for custom components)</h1>
-			<Dropdown>
+			{/* <Dropdown>
 				<Dropdown.Toggle as={Button}>Toggle bro</Dropdown.Toggle>
 				<Dropdown.Body>
 					<span>This is custom</span>
 				</Dropdown.Body>
-			</Dropdown>
+			</Dropdown> */}
 		</div>
 	);
 };

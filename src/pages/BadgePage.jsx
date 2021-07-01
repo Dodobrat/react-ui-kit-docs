@@ -8,7 +8,7 @@ const BadgePage = () => {
 			<Badge onClick={() => console.log("test")}>Clickable</Badge>
 			<Badge
 				onClick={() => console.log("big test")}
-				size='xl'
+				sizing='xl'
 				className='filled'
 				pigment={{ base: null, lg: "danger" }}
 				pigmentColor={{ base: "danger", lg: null }}>
@@ -32,13 +32,13 @@ const BadgePage = () => {
 			<Badge pigment='danger'>Badge</Badge>
 			<br />
 			<h1>Sizes</h1>
-			<Badge size='xs'>Badge</Badge>
-			<Badge size='sm'>Badge</Badge>
-			<Badge size='md'>Badge</Badge>
-			<Badge size='lg'>Badge</Badge>
-			<Badge size='xl'>Badge</Badge>
+			<Badge sizing='xs'>Badge</Badge>
+			<Badge sizing='sm'>Badge</Badge>
+			<Badge sizing='md'>Badge</Badge>
+			<Badge sizing='lg'>Badge</Badge>
+			<Badge sizing='xl'>Badge</Badge>
 			<p>Responsive sizing</p>
-			<Badge size={{ base: "sm", md: "lg", xl: "xs" }}>Badge</Badge>
+			<Badge sizing={{ base: "sm", md: "lg", xl: "xs" }}>Badge</Badge>
 			<br />
 			<h1>Custom Element</h1>
 			<Badge as='div'>I am div</Badge>

@@ -8,9 +8,9 @@ import {
 	Heading,
 	Input,
 	TextArea,
-	User,
-	Mail,
-	Lock,
+	IconUser,
+	IconMail,
+	IconLock,
 	CheckboxComponent,
 	Checkbox,
 	Switch,
@@ -34,12 +34,12 @@ const FormsPage = () => {
 						<Flex spacingY='xs'>
 							<Flex.Col col={{ xs: "6" }}>
 								<FormControl label='Name' htmlFor='name' hintMsg='Name can not be longer than 50 characters'>
-									<Input name='name' preffix={<User />} placeholder='Enter Name' />
+									<Input name='name' preffix={<IconUser />} placeholder='Enter Name' />
 								</FormControl>
 							</Flex.Col>
 							<Flex.Col col={{ xs: "6" }}>
 								<FormControl label='E-mail' htmlFor='email'>
-									<Input name='email' type='email' preffix={<Mail />} placeholder='Enter E-mail' />
+									<Input name='email' type='email' preffix={<IconMail />} placeholder='Enter E-mail' />
 								</FormControl>
 							</Flex.Col>
 							<Flex.Col col={{ xs: "12" }}>
@@ -57,7 +57,7 @@ const FormsPage = () => {
 			<br />
 			<hr />
 			<br />
-			<Container size='xs'>
+			<Container sizing='xs'>
 				<Card flavor='flat'>
 					<Card.Body>
 						<Heading as='h6' centered>
@@ -67,32 +67,37 @@ const FormsPage = () => {
 							<Flex spacingY='xs'>
 								<Flex.Col col={{ xs: "6" }}>
 									<FormControl label='First Name' htmlFor='first_name'>
-										<Input name='first_name' preffix={<User />} placeholder='First Name' />
+										<Input name='first_name' preffix={<IconUser />} placeholder='First Name' />
 									</FormControl>
 								</Flex.Col>
 								<Flex.Col col={{ xs: "6" }}>
 									<FormControl label='Last Name' htmlFor='last_name'>
-										<Input name='last_name' preffix={<User />} placeholder='Last Name' />
+										<Input name='last_name' preffix={<IconUser />} placeholder='Last Name' />
 									</FormControl>
 								</Flex.Col>
 								<Flex.Col col={{ xs: "12" }}>
 									<FormControl label='E-mail' htmlFor='reg-email'>
-										<Input name='email' id='reg-email' type='email' preffix={<Mail />} placeholder='Enter E-mail' />
+										<Input name='email' id='reg-email' type='email' preffix={<IconMail />} placeholder='Enter E-mail' />
 									</FormControl>
 								</Flex.Col>
 								<Flex.Col col={{ xs: "6" }}>
 									<FormControl label='Password' htmlFor='password'>
-										<Input name='password' type='password' preffix={<Lock />} placeholder='Enter Password' />
+										<Input name='password' type='password' preffix={<IconLock />} placeholder='Enter Password' />
 									</FormControl>
 								</Flex.Col>
 								<Flex.Col col={{ xs: "6" }}>
 									<FormControl label='Confirm Password' htmlFor='confirm_password'>
-										<Input name='confirm_password' type='password' preffix={<Lock />} placeholder='Confirm Password' />
+										<Input
+											name='confirm_password'
+											type='password'
+											preffix={<IconLock />}
+											placeholder='Confirm Password'
+										/>
 									</FormControl>
 								</Flex.Col>
 								<Flex.Col col={{ xs: "12" }}>
 									<FormControl label='Upload Avatar' htmlFor='avatar'>
-										<Input name='avatar' type='file' preffix={<User />} placeholder='Add Picture' />
+										<Input name='avatar' type='file' preffix={<IconUser />} placeholder='Add Picture' />
 									</FormControl>
 								</Flex.Col>
 								<Flex.Col col={{ xs: "12" }}>

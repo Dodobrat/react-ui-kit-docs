@@ -132,15 +132,15 @@ const TablesPage = () => {
 			<br />
 			<TableComponent pigment={{ base: "success", lg: "default" }} flavor={{ base: "flat", lg: "default" }} bordered />
 			<h1>Sizes</h1>
-			<TableComponent size='xs' />
+			<TableComponent sizing='xs' />
 			<br />
-			<TableComponent size='sm' />
+			<TableComponent sizing='sm' />
 			<br />
-			<TableComponent size='md' />
+			<TableComponent sizing='md' />
 			<br />
-			<TableComponent size='lg' />
+			<TableComponent sizing='lg' />
 			<br />
-			<TableComponent size='xl' />
+			<TableComponent sizing='xl' />
 			<br />
 			<h1>Combo</h1>
 			<Card>
@@ -152,16 +152,16 @@ const TablesPage = () => {
 						<Flex.Col col={"12"}>
 							<Flex disableNegativeSpace spacingY='xs'>
 								<Flex.Col col={{ xs: "6", sm: "4", md: "3" }}>
-									<Input type='search' size='sm' placeholder='Search By Name' />
+									<Input type='search' sizing='sm' placeholder='Search By Name' />
 								</Flex.Col>
 								<Flex.Col col={{ xs: "6", sm: "4", md: "3" }}>
-									<Input type='search' size='sm' placeholder='Search By Position' />
+									<Input type='search' sizing='sm' placeholder='Search By Position' />
 								</Flex.Col>
 								<Flex.Col className='d--flex'>
 									<button className='dui__btn flavor--default dui__btn--sm ml--auto mr--sm--2 mr--base--4 bg--danger bgtext--danger d--block w--base--50 w--sm--auto'>
 										Export
 									</button>
-									<Button size='sm' className='w--base--50 w--sm--auto'>
+									<Button sizing='sm' className='w--base--50 w--sm--auto'>
 										Export
 									</Button>
 								</Flex.Col>

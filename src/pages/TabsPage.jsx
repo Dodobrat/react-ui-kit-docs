@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Moon, Tabs } from "@dodobrat/react-ui-kit";
+import { Button, ButtonGroup, IconMoon, Tabs } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { useState } from "react";
 
@@ -26,7 +26,7 @@ const TabsPage = () => {
 					<Tabs.Panel
 						tab={
 							<>
-								<Moon /> Tab 1
+								<IconMoon /> Tab 1
 							</>
 						}>
 						1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.

@@ -12,7 +12,7 @@ import TextAreasPanel from "./inputsubpages/TextAreasPanel";
 const InputsPage = () => {
 	return (
 		<div>
-			<Tabs activeTab={4}>
+			<Tabs activeTab={0}>
 				<Tabs.Panel tab={"Inputs"}>
 					<InputsPanel />
 				</Tabs.Panel>

@@ -1,4 +1,4 @@
-import { Select, SelectComponent, Settings } from "@dodobrat/react-ui-kit";
+import { Select, SelectComponent, IconSettings } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ const SelectPanel = () => {
 	return (
 		<div>
 			<h1>Select Component (Limited customization)</h1>
-			<SelectComponent size='xl' flavor='flat' pigment='info'>
+			<SelectComponent sizing='xl' flavor='flat' pigment='info'>
 				<option value='' disabled>
 					Select your option
 				</option>
@@ -43,8 +43,8 @@ const SelectPanel = () => {
 			</SelectComponent>
 			<h1>Select</h1>
 			<Select
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				defaultValue=''
 				isClearable
 				seamless
@@ -61,8 +61,8 @@ const SelectPanel = () => {
 			</Select>
 			<br />
 			<Select
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				value={value}
 				onChange={onChange}
 				isClearable
@@ -99,10 +99,10 @@ const SelectPanel = () => {
 			<h1>Select sizes</h1>
 			<Select
 				defaultValue=''
-				size='xs'
+				sizing='xs'
 				isClearable
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}>
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}>
 				<option value='' disabled>
 					Select your option
 				</option>
@@ -114,10 +114,10 @@ const SelectPanel = () => {
 			<br />
 			<Select
 				defaultValue=''
-				size='sm'
+				sizing='sm'
 				isClearable
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}>
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}>
 				<option value='' disabled>
 					Select your option
 				</option>
@@ -129,10 +129,10 @@ const SelectPanel = () => {
 			<br />
 			<Select
 				defaultValue=''
-				size='md'
+				sizing='md'
 				isClearable
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}>
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}>
 				<option value='' disabled>
 					Select your option
 				</option>
@@ -144,10 +144,10 @@ const SelectPanel = () => {
 			<br />
 			<Select
 				defaultValue=''
-				size='lg'
+				sizing='lg'
 				isClearable
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}>
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}>
 				<option value='' disabled>
 					Select your option
 				</option>
@@ -159,10 +159,10 @@ const SelectPanel = () => {
 			<br />
 			<Select
 				defaultValue=''
-				size='xl'
+				sizing='xl'
 				isClearable
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}>
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}>
 				<option value='' disabled>
 					Select your option
 				</option>

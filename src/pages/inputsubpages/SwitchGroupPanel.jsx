@@ -44,19 +44,19 @@ const SwitchGroupPanel = () => {
 			<br />
 			<br />
 			<h1>SwitchGroup Sizes</h1>
-			<SwitchGroup options={switchGroupOptions} name='gender2' size='xs' activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup options={switchGroupOptions} name='gender2' sizing='xs' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
-			<SwitchGroup options={switchGroupOptions} name='gender3' size='sm' activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup options={switchGroupOptions} name='gender3' sizing='sm' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
-			<SwitchGroup options={switchGroupOptions} name='gender4' size='md' activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup options={switchGroupOptions} name='gender4' sizing='md' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
-			<SwitchGroup options={switchGroupOptions} name='gender5' size='lg' activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup options={switchGroupOptions} name='gender5' sizing='lg' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
-			<SwitchGroup options={switchGroupOptions} name='gender6' size='xl' activeOption={switchGroupOptions[0].value} />
+			<SwitchGroup options={switchGroupOptions} name='gender6' sizing='xl' activeOption={switchGroupOptions[0].value} />
 			<br />
 			<br />
 			<h1>Switch Group Util</h1>

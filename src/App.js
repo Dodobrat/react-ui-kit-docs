@@ -1,176 +1,241 @@
-import React, { useEffect } from "react";
-import { CaretUp, BackTop, Button, Container, useDarkMode, Sun, Moon, DragScroll, useConfig } from "@dodobrat/react-ui-kit";
-import { Switch, Route, NavLink, Redirect } from "react-router-dom";
-import AlertsPage from "./pages/AlertsPage";
-import BadgePage from "./pages/BadgePage";
-import BreadcrumbsPage from "./pages/BreadcrumbsPage";
-import ButtonsPage from "./pages/ButtonsPage";
-import CardPage from "./pages/CardPage";
-import CollapsePage from "./pages/CollapsePage";
-import DragScrollPage from "./pages/DragScrollPage";
-import FlexPage from "./pages/FlexPage";
-import IconsPage from "./pages/IconsPage";
-import ListGroupPage from "./pages/ListGroupPage";
-import PortalDrawerPage from "./pages/PortalDrawerPage";
-import ProgressPage from "./pages/ProgressPage";
-import SkeletonPage from "./pages/SkeletonPage";
-import SpinnersPage from "./pages/SpinnersPage";
-import TabsPage from "./pages/TabsPage";
-import TypographyPage from "./pages/TypographyPage";
-import FormsPage from "./pages/FormsPage";
-import InputsPage from "./pages/InputsPage";
-import TooltipPage from "./pages/TooltipPage";
-import TablesPage from "./pages/TablesPage";
-// import DropdownsPage from "./pages/DropdownsPage";
+import React, { lazy, Suspense, useEffect } from "react";
+import {
+	BackTop,
+	Button,
+	Container,
+	IconSun,
+	IconMoon,
+	useConfig,
+	AdminLayout,
+	Text,
+	IconWarning,
+	IconUser,
+	IconHamburger,
+	useAdminLayout,
+} from "@dodobrat/react-ui-kit";
+import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from "react-router-dom";
+
+const AlertsPage = lazy(() => import("./pages/AlertsPage"));
+const BadgePage = lazy(() => import("./pages/BadgePage"));
+const BreadcrumbsPage = lazy(() => import("./pages/BreadcrumbsPage"));
+const ButtonsPage = lazy(() => import("./pages/ButtonsPage"));
+const CardPage = lazy(() => import("./pages/CardPage"));
+const CollapsePage = lazy(() => import("./pages/CollapsePage"));
+const DragScrollPage = lazy(() => import("./pages/DragScrollPage"));
+const FlexPage = lazy(() => import("./pages/FlexPage"));
+const IconsPage = lazy(() => import("./pages/IconsPage"));
+const ListGroupPage = lazy(() => import("./pages/ListGroupPage"));
+const PortalDrawerPage = lazy(() => import("./pages/PortalDrawerPage"));
+const ProgressPage = lazy(() => import("./pages/ProgressPage"));
+const SkeletonPage = lazy(() => import("./pages/SkeletonPage"));
+const SpinnersPage = lazy(() => import("./pages/SpinnersPage"));
+const TabsPage = lazy(() => import("./pages/TabsPage"));
+const TypographyPage = lazy(() => import("./pages/TypographyPage"));
+const FormsPage = lazy(() => import("./pages/FormsPage"));
+const InputsPage = lazy(() => import("./pages/InputsPage"));
+const TooltipPage = lazy(() => import("./pages/TooltipPage"));
+const TablesPage = lazy(() => import("./pages/TablesPage"));
+const DropdownsPage = lazy(() => import("./pages/DropdownsPage"));
+
+const pages = [
+	{
+		path: "/alerts",
+		component: AlertsPage,
+		icon: <IconWarning className='dui__icon' />,
+		label: "Alerts",
+	},
+	{
+		path: "/badges",
+		component: BadgePage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Badges",
+	},
+	{
+		path: "/breadcrumbs",
+		component: BreadcrumbsPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Breadcrumbs",
+	},
+	{
+		path: "/buttons",
+		component: ButtonsPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Buttons",
+	},
+	{
+		path: "/cards",
+		component: CardPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Cards",
+	},
+	{
+		path: "/collapse",
+		component: CollapsePage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Collapse",
+	},
+	{
+		path: "/dragscroll",
+		component: DragScrollPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "DragScroll",
+	},
+	{
+		path: "/dropdowns",
+		component: DropdownsPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Dropdowns",
+	},
+	{
+		path: "/flex",
+		component: FlexPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Flex",
+	},
+	{
+		path: "/forms",
+		component: FormsPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Forms",
+	},
+	{
+		path: "/icons",
+		component: IconsPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Icons",
+	},
+	{
+		path: "/inputs",
+		component: InputsPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Inputs",
+	},
+	{
+		path: "/lists",
+		component: ListGroupPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Lists",
+	},
+	{
+		path: "/portals",
+		component: PortalDrawerPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Portals / Drawers",
+	},
+	{
+		path: "/progress",
+		component: ProgressPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Progress",
+	},
+	{
+		path: "/skeleton",
+		component: SkeletonPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Skeleton",
+	},
+	{
+		path: "/spinners",
+		component: SpinnersPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Spinners",
+	},
+	{
+		path: "/tables",
+		component: TablesPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Tables",
+	},
+	{
+		path: "/tabs",
+		component: TabsPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Tabs",
+	},
+	{
+		path: "/tooltips",
+		component: TooltipPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Tooltips",
+	},
+	{
+		path: "/typography",
+		component: TypographyPage,
+		icon: <IconUser className='dui__icon' />,
+		label: "Typography",
+	},
+];
 
 const App = () => {
-	const [dark, setDark] = useDarkMode();
-
 	const {
-		appConfig: { setConfig },
+		themeConfig: { dark },
+		toggleDarkTheme,
 	} = useConfig();
+
+	const { toggleSidebar } = useAdminLayout();
 
 	useEffect(() => {
 		console.log("render");
 	});
 
-	useEffect(() => {
-		setConfig({
-			flavor: "default",
-			// pigment: "primary",
-			// pigmentColor: null,
-			// size: "md",
-		});
-		return () => {
-			setConfig({});
-		};
-	}, [setConfig]);
-
 	return (
-		<Container className='px--base--2 px--md--4' size='lg'>
-			<div>
-				<br />
-				<h1>
-					<Button onClick={() => setDark((prev) => !prev)} flavor='round' pigment='secondary'>
-						{dark ? <Moon className='dui__icon' /> : <Sun className='dui__icon' />}
-					</Button>{" "}
-					{dark ? "Dark Theme" : "Light Theme"}
-				</h1>
-			</div>
-
-			<hr />
-
-			<DragScroll className='nav'>
-				<div className='drag-container'>
-					<NavLink to='/alerts' activeStyle={{ fontWeight: 700 }}>
-						Alerts
-					</NavLink>
-					<NavLink to='/badges' activeStyle={{ fontWeight: 700 }}>
-						Badges
-					</NavLink>
-					<NavLink to='/breadcrumbs' activeStyle={{ fontWeight: 700 }}>
-						Breadcrumbs
-					</NavLink>
-					<NavLink to='/buttons' activeStyle={{ fontWeight: 700 }}>
-						Buttons
-					</NavLink>
-					<NavLink to='/cards' activeStyle={{ fontWeight: 700 }}>
-						Cards
-					</NavLink>
-					{/* <NavLink to='/dropdowns' activeStyle={{ fontWeight: 700 }}>
-						Dropdowns
-					</NavLink> */}
-					<NavLink to='/tables' activeStyle={{ fontWeight: 700 }}>
-						Tables
-					</NavLink>
-					<NavLink to='/collapse' activeStyle={{ fontWeight: 700 }}>
-						Collapse
-					</NavLink>
-					<NavLink to='/dragscroll' activeStyle={{ fontWeight: 700 }}>
-						Drag Scroll
-					</NavLink>
-					<NavLink to='/flex' activeStyle={{ fontWeight: 700 }}>
-						Flex
-					</NavLink>
-					<NavLink to='/icons' activeStyle={{ fontWeight: 700 }}>
-						Icons
-					</NavLink>
-					<NavLink to='/lists' activeStyle={{ fontWeight: 700 }}>
-						List Groups
-					</NavLink>
-					<NavLink to='/portals' activeStyle={{ fontWeight: 700 }}>
-						Portals / Drawers
-					</NavLink>
-					<NavLink to='/tooltips' activeStyle={{ fontWeight: 700 }}>
-						Tooltips
-					</NavLink>
-					<NavLink to='/progress' activeStyle={{ fontWeight: 700 }}>
-						Progress
-					</NavLink>
-					<NavLink to='/skeleton' activeStyle={{ fontWeight: 700 }}>
-						Skeleton
-					</NavLink>
-					<NavLink to='/spinners' activeStyle={{ fontWeight: 700 }}>
-						Spinners
-					</NavLink>
-					<NavLink to='/tabs' activeStyle={{ fontWeight: 700 }}>
-						Tabs
-					</NavLink>
-					<NavLink to='/typography' activeStyle={{ fontWeight: 700 }}>
-						Typography
-					</NavLink>
-					<NavLink to='/inputs' activeStyle={{ fontWeight: 700 }}>
-						Inputs
-					</NavLink>
-					<NavLink to='/forms' activeStyle={{ fontWeight: 700 }}>
-						Forms
-					</NavLink>
-				</div>
-			</DragScroll>
-
-			<hr />
-
-			<Switch>
-				<Route path='/alerts' component={AlertsPage} />
-				<Route path='/badges' component={BadgePage} />
-				<Route path='/breadcrumbs' component={BreadcrumbsPage} />
-				<Route path='/buttons' component={ButtonsPage} />
-				<Route path='/cards' component={CardPage} />
-				{/* <Route path='/dropdowns' component={DropdownsPage} /> */}
-				{/* <Route path='/dropdowns/:option' component={DropdownsPage} /> */}
-				<Route path='/tables' component={TablesPage} />
-				<Route path='/collapse' component={CollapsePage} />
-				<Route path='/dragscroll' component={DragScrollPage} />
-				<Route path='/flex' component={FlexPage} />
-				<Route path='/icons' component={IconsPage} />
-				<Route path='/lists' component={ListGroupPage} />
-				<Route path='/tooltips' component={TooltipPage} />
-				<Route path='/portals' component={PortalDrawerPage} />
-				<Route path='/progress' component={ProgressPage} />
-				<Route path='/skeleton' component={SkeletonPage} />
-				<Route path='/spinners' component={SpinnersPage} />
-				<Route path='/tabs' component={TabsPage} />
-				<Route path='/typography' component={TypographyPage} />
-				<Route path='/inputs' component={InputsPage} />
-				<Route path='/forms' component={FormsPage} />
-				<Redirect to='/alerts' />
-			</Switch>
-
-			<div>
-				<br />
-				<br />
-				<h1>Back To Top</h1>
-				<BackTop position='bottom' />
-				<BackTop scrollDistanceTrigger={250} position='bottom-left'>
-					<CaretUp className='dui__icon' />
-				</BackTop>
-				<BackTop scrollDistanceTrigger={100} />
-				<br />
-				<br />
-				<br />
-				<br />
-			</div>
-		</Container>
+		<Router>
+			<AdminLayout>
+				<AdminLayout.Sidebar>
+					<AdminLayout.Sidebar.Item
+						className='py--2'
+						main={
+							<Button onClick={toggleSidebar} flavor='round' pigment='default'>
+								<IconHamburger className='dui__icon' />
+							</Button>
+						}
+						extended={<Text className='mb--0'>@dodobrat/react-ui-kit</Text>}
+					/>
+					<AdminLayout.Sidebar.Item
+						main={
+							<Button onClick={toggleDarkTheme} flavor='round' pigment='secondary'>
+								{dark ? <IconMoon className='dui__icon' /> : <IconSun className='dui__icon' />}
+							</Button>
+						}
+						extended={<Text className='mb--0'>{dark ? "Dark Theme" : "Light Theme"}</Text>}
+						className='py--2'
+					/>
+					{pages.map((page) => (
+						<AdminLayout.Sidebar.Item
+							as={NavLink}
+							key={Math.random() + page.path}
+							to={page.path}
+							main={<Text className='mb--0'>{page.icon}</Text>}
+							extended={<Text className='mb--0'>{page.label}</Text>}
+							className='py--2'
+						/>
+					))}
+				</AdminLayout.Sidebar>
+				<AdminLayout.Topbar>
+					<Container className='px--3 h--100 d--grid' style={{ alignItems: "center" }} sizing='xl'>
+						<Button flavor='round' pigment='default' onClick={toggleSidebar} className='d--sm--none'>
+							<IconHamburger className='dui__icon' />
+						</Button>
+					</Container>
+				</AdminLayout.Topbar>
+				<AdminLayout.Content>
+					<Container className='px--2 py--4' sizing='xl'>
+						<Suspense fallback={<div />}>
+							<Switch>
+								{pages.map((page) => (
+									<Route key={Math.random() + page.path} path={page.path} exact component={page.component} />
+								))}
+								<Redirect to='/alerts' />
+							</Switch>
+						</Suspense>
+					</Container>
+				</AdminLayout.Content>
+				<AdminLayout.Footer>
+					<BackTop position='bottom' />
+					<BackTop scrollDistanceTrigger={100} />
+				</AdminLayout.Footer>
+			</AdminLayout>
+		</Router>
 	);
 };
 

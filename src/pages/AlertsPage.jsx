@@ -1,4 +1,4 @@
-import { Alert, Button, Close } from "@dodobrat/react-ui-kit";
+import { Alert, Button, IconClose } from "@dodobrat/react-ui-kit";
 import React from "react";
 
 const AlertsPage = () => {
@@ -44,27 +44,27 @@ const AlertsPage = () => {
 			<br />
 
 			<h1>Alert Size</h1>
-			<Alert size='xs' isDismissible>
+			<Alert sizing='xs' isDismissible>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
-			<Alert size='sm' isDismissible>
+			<Alert sizing='sm' isDismissible>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
-			<Alert size='md' isDismissible>
+			<Alert sizing='md' isDismissible>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
-			<Alert size='lg' isDismissible>
+			<Alert sizing='lg' isDismissible>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
-			<Alert size='xl' isDismissible>
+			<Alert sizing='xl' isDismissible>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
-			<Alert size={{ base: "sm", sm: "md", lg: "lg", xl: "xl" }} isDismissible>
+			<Alert sizing={{ base: "sm", sm: "md", lg: "lg", xl: "xl" }} isDismissible>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
 			<br />
@@ -87,8 +87,8 @@ const AlertsPage = () => {
 			<Alert
 				isDismissible
 				dismissibleComponent={
-					<Button size='xs' pigment='warning'>
-						<Close className='dui__icon' />
+					<Button sizing='xs' pigment='warning'>
+						<IconClose className='dui__icon' />
 					</Button>
 				}>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.

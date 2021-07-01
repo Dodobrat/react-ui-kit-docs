@@ -17,31 +17,31 @@ const BreadcrumbsPage = () => {
 			</Breadcrumbs>
 			<br />
 			<h1>Braedcrumb Sizes</h1>
-			<Breadcrumbs size='xs'>
+			<Breadcrumbs sizing='xs'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs size='sm'>
+			<Breadcrumbs sizing='sm'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs size='md'>
+			<Breadcrumbs sizing='md'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs size='lg'>
+			<Breadcrumbs sizing='lg'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>
 			</Breadcrumbs>
 			<br />
-			<Breadcrumbs size='xl'>
+			<Breadcrumbs sizing='xl'>
 				<Breadcrumbs.Item>App</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Docs</Breadcrumbs.Item>
 				<Breadcrumbs.Item>Bradcrumbs</Breadcrumbs.Item>

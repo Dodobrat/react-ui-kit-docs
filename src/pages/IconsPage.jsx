@@ -1,40 +1,43 @@
 import {
-	ArrowDown,
-	ArrowLeft,
-	ArrowRight,
-	ArrowUp,
-	Calendar,
-	CaretDown,
-	CaretLeft,
-	CaretRight,
-	CaretUp,
-	Clock,
-	Close,
-	CloseOutlined,
-	Completed,
-	Danger,
-	DblCaretDown,
-	DblCaretLeft,
-	DblCaretRight,
-	DblCaretUp,
-	Eye,
-	EyeCrossed,
+	IconArrowDown,
+	IconArrowLeft,
+	IconArrowRight,
+	IconArrowUp,
+	IconCalendar,
+	IconCaretDown,
+	IconCaretLeft,
+	IconCaretRight,
+	IconCaretUp,
+	IconCheckOutlined,
+	IconCheck,
+	IconClock,
+	IconClose,
+	IconCloseOutlined,
+	IconCompleted,
+	IconDanger,
+	IconDoubleCaretDown,
+	IconDoubleCaretLeft,
+	IconDoubleCaretRight,
+	IconDoubleCaretUp,
+	IconEye,
+	IconEyeCrossed,
 	Flex,
-	Hamburger,
-	Info,
-	Lock,
-	Mail,
-	MailOpened,
-	Minus,
-	Moon,
-	More,
-	MoreVertical,
-	Plus,
-	Search,
-	Settings,
-	Sun,
-	User,
-	Warning,
+	IconHamburger,
+	IconInfo,
+	IconLock,
+	IconLockUnlocked,
+	IconMail,
+	IconMailOpened,
+	IconMinus,
+	IconMoon,
+	IconMore,
+	IconMoreVertical,
+	IconPlus,
+	IconSearch,
+	IconSettings,
+	IconSun,
+	IconUser,
+	IconWarning,
 } from "@dodobrat/react-ui-kit";
 import React from "react";
 
@@ -47,16 +50,16 @@ const IconsPage = () => {
 					<h2>Arrows</h2>
 					<Flex>
 						<Flex.Col>
-							<ArrowDown />
+							<IconArrowDown />
 						</Flex.Col>
 						<Flex.Col>
-							<ArrowLeft />
+							<IconArrowLeft />
 						</Flex.Col>
 						<Flex.Col>
-							<ArrowRight />
+							<IconArrowRight />
 						</Flex.Col>
 						<Flex.Col>
-							<ArrowUp />
+							<IconArrowUp />
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>
@@ -64,16 +67,16 @@ const IconsPage = () => {
 					<h2>Caret</h2>
 					<Flex>
 						<Flex.Col>
-							<CaretDown />
+							<IconCaretDown />
 						</Flex.Col>
 						<Flex.Col>
-							<CaretLeft />
+							<IconCaretLeft />
 						</Flex.Col>
 						<Flex.Col>
-							<CaretRight />
+							<IconCaretRight />
 						</Flex.Col>
 						<Flex.Col>
-							<CaretUp />
+							<IconCaretUp />
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>
@@ -81,16 +84,16 @@ const IconsPage = () => {
 					<h2>Dbl Caret</h2>
 					<Flex>
 						<Flex.Col>
-							<DblCaretDown />
+							<IconDoubleCaretDown />
 						</Flex.Col>
 						<Flex.Col>
-							<DblCaretLeft />
+							<IconDoubleCaretLeft />
 						</Flex.Col>
 						<Flex.Col>
-							<DblCaretRight />
+							<IconDoubleCaretRight />
 						</Flex.Col>
 						<Flex.Col>
-							<DblCaretUp />
+							<IconDoubleCaretUp />
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>
@@ -98,22 +101,22 @@ const IconsPage = () => {
 					<h1>Status</h1>
 					<Flex>
 						<Flex.Col>
-							<Completed />
+							<IconCompleted />
 						</Flex.Col>
 						<Flex.Col>
-							<Danger />
+							<IconDanger />
 						</Flex.Col>
 						<Flex.Col>
-							<Warning />
+							<IconWarning />
 						</Flex.Col>
 						<Flex.Col>
-							<Info />
+							<IconInfo />
 						</Flex.Col>
 						<Flex.Col>
-							<Moon />
+							<IconMoon />
 						</Flex.Col>
 						<Flex.Col>
-							<Sun />
+							<IconSun />
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>
@@ -121,22 +124,25 @@ const IconsPage = () => {
 					<h1>Input (Helpers / preffixes / suffixes)</h1>
 					<Flex>
 						<Flex.Col>
-							<Search />
+							<IconSearch />
 						</Flex.Col>
 						<Flex.Col>
-							<Calendar />
+							<IconCalendar />
 						</Flex.Col>
 						<Flex.Col>
-							<Clock />
+							<IconClock />
 						</Flex.Col>
 						<Flex.Col>
-							<Lock />
+							<IconLock />
 						</Flex.Col>
 						<Flex.Col>
-							<Mail />
+							<IconLockUnlocked />
 						</Flex.Col>
 						<Flex.Col>
-							<User />
+							<IconMail />
+						</Flex.Col>
+						<Flex.Col>
+							<IconUser />
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>
@@ -144,37 +150,43 @@ const IconsPage = () => {
 					<h1>Other</h1>
 					<Flex>
 						<Flex.Col>
-							<Eye />
+							<IconEye />
 						</Flex.Col>
 						<Flex.Col>
-							<EyeCrossed />
+							<IconEyeCrossed />
 						</Flex.Col>
 						<Flex.Col>
-							<Close />
+							<IconCheck />
 						</Flex.Col>
 						<Flex.Col>
-							<CloseOutlined />
+							<IconCheckOutlined />
 						</Flex.Col>
 						<Flex.Col>
-							<Hamburger />
+							<IconClose />
 						</Flex.Col>
 						<Flex.Col>
-							<Minus />
+							<IconCloseOutlined />
 						</Flex.Col>
 						<Flex.Col>
-							<MoreVertical />
+							<IconHamburger />
 						</Flex.Col>
 						<Flex.Col>
-							<More />
+							<IconMinus />
 						</Flex.Col>
 						<Flex.Col>
-							<Plus />
+							<IconMoreVertical />
 						</Flex.Col>
 						<Flex.Col>
-							<Settings />
+							<IconMore />
 						</Flex.Col>
 						<Flex.Col>
-							<MailOpened />
+							<IconPlus />
+						</Flex.Col>
+						<Flex.Col>
+							<IconSettings />
+						</Flex.Col>
+						<Flex.Col>
+							<IconMailOpened />
 						</Flex.Col>
 					</Flex>
 				</Flex.Col>

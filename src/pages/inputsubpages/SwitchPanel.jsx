@@ -1,4 +1,4 @@
-import { Settings, Switch, SwitchComponent } from "@dodobrat/react-ui-kit";
+import { IconSettings, Switch, SwitchComponent } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -32,10 +32,10 @@ const SwitchPanel = () => {
 			</SwitchComponent>
 			<br />
 			<br />
-			<SwitchComponent size='xl'>Only Component Size</SwitchComponent>
+			<SwitchComponent sizing='xl'>Only Component Size</SwitchComponent>
 			<br />
 			<br />
-			<SwitchComponent size='xl' flavor='flat'>
+			<SwitchComponent sizing='xl' flavor='flat'>
 				Only Component Flat + Size
 			</SwitchComponent>
 			<br />
@@ -52,8 +52,8 @@ const SwitchPanel = () => {
 			<br />
 			<h1>Switch styling</h1>
 			<Switch
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				pigment='success'
 				disableWhileLoading={false}
 				isLoading>
@@ -61,8 +61,8 @@ const SwitchPanel = () => {
 			</Switch>
 			<br />
 			<Switch
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				flavor='rounded'
 				disableWhileLoading={false}
 				isLoading>
@@ -70,8 +70,8 @@ const SwitchPanel = () => {
 			</Switch>
 			<br />
 			<Switch
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				flavor='flat'
 				disableWhileLoading={false}
 				isLoading>
@@ -79,9 +79,9 @@ const SwitchPanel = () => {
 			</Switch>
 			<br />
 			<Switch
-				size='xl'
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				sizing='xl'
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				isLoading
 				seamless
 				disableWhileLoading={false}>
@@ -89,9 +89,9 @@ const SwitchPanel = () => {
 			</Switch>
 			<br />
 			<Switch
-				size='xl'
-				preffix={<Settings className='dui__icon' />}
-				suffix={<Settings className='dui__icon' />}
+				sizing='xl'
+				preffix={<IconSettings className='dui__icon' />}
+				suffix={<IconSettings className='dui__icon' />}
 				isLoading
 				disableWhileLoading={false}>
 				XL size

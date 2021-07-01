@@ -5,7 +5,7 @@ const TextAreasPanel = () => {
 	return (
 		<div>
 			<h1>TextArea Component (Limited customization)</h1>
-			<TextAreaComponent placeholder='XL Only Input' size='xl' flavor='flat' pigment='info' />
+			<TextAreaComponent placeholder='XL Only Input' sizing='xl' flavor='flat' pigment='info' />
 			<br />
 			<TextAreaComponent placeholder='Default Only Input' />
 			<br />
