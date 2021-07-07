@@ -185,7 +185,7 @@ const App = () => {
 					<AdminLayout.Sidebar.Item
 						className='py--2'
 						main={
-							<Button onClick={toggleSidebar} flavor='round' pigment='default'>
+							<Button onClick={toggleSidebar} flavor='rounded' equalDimensions pigment='default'>
 								<IconHamburger className='dui__icon' />
 							</Button>
 						}
@@ -193,7 +193,7 @@ const App = () => {
 					/>
 					<AdminLayout.Sidebar.Item
 						main={
-							<Button onClick={toggleDarkTheme} flavor='round' pigment='secondary'>
+							<Button onClick={toggleDarkTheme} flavor='rounded' equalDimensions pigment='secondary'>
 								{dark ? <IconMoon className='dui__icon' /> : <IconSun className='dui__icon' />}
 							</Button>
 						}
@@ -213,7 +213,7 @@ const App = () => {
 				</AdminLayout.Sidebar>
 				<AdminLayout.Topbar>
 					<Container className='px--3 h--100 d--grid' style={{ alignItems: "center" }} sizing='xl'>
-						<Button flavor='round' pigment='default' onClick={toggleSidebar} className='d--sm--none'>
+						<Button flavor='rounded' equalDimensions pigment='default' onClick={toggleSidebar} className='d--sm--none'>
 							<IconHamburger className='dui__icon' />
 						</Button>
 					</Container>

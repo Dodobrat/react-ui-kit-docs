@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { AdminLayoutProvider, ConfigProvider } from "@dodobrat/react-ui-kit";
 
 const presets = {
-	flavor: "flat",
+	flavor: "default",
 };
 
 ReactDOM.render(

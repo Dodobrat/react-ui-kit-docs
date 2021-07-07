@@ -84,41 +84,41 @@ const ButtonsPage = () => {
 				</Button>
 				<br />
 				<h1>Round Button:</h1>
-				<Button sizing='xs' flavor='round'>
+				<Button sizing='xs' flavor='rounded' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='sm' flavor='round'>
+				<Button sizing='sm' flavor='rounded'  equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='md' flavor='round'>
+				<Button sizing='md' flavor='rounded' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='lg' flavor='round'>
+				<Button sizing='lg' flavor='rounded' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='xl' flavor='round'>
+				<Button sizing='xl' flavor='rounded' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='xl' flavor='round' isLoading>
+				<Button sizing='xl' flavor='rounded' isLoading equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
 				<h1>Square Button:</h1>
-				<Button sizing='xs' flavor='square'>
+				<Button sizing='xs' flavor='flat'  equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='sm' flavor='square'>
+				<Button sizing='sm' flavor='flat' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='md' flavor='square'>
+				<Button sizing='md' flavor='flat' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='lg' flavor='square'>
+				<Button sizing='lg' flavor='flat' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='xl' flavor='square'>
+				<Button sizing='xl' flavor='flat' equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
-				<Button sizing='xl' flavor='square' isLoading>
+				<Button sizing='xl' flavor='flat' isLoading equalDimensions>
 					<IconSun className='dui__icon' />
 				</Button>
 			</div>
