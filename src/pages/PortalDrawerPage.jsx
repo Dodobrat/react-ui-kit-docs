@@ -1,4 +1,4 @@
-import { Button, Card, IconClose, Drawer, Portal, Text } from "@dodobrat/react-ui-kit";
+import { Button, Card, Drawer, Portal, Text } from "@dodobrat/react-ui-kit";
 import React, { useState } from "react";
 import { lazy } from "react";
 import { Suspense } from "react";
@@ -43,7 +43,7 @@ const PortalDrawerPage = () => {
 					<Card.Header
 						actions={
 							<Button sizing='xs' pigment='none' onClick={closeModalB}>
-								<IconClose className='dui__icon' />
+								X{" "}
 							</Button>
 						}>
 						Portal Modal

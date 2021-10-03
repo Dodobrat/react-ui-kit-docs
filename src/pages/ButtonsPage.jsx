@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, IconCompleted, Container, IconSun } from "@dodobrat/react-ui-kit";
+import { Button, ButtonGroup, Container } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { Link, NavLink, Route, Switch } from "react-router-dom";
 
@@ -84,43 +84,19 @@ const ButtonsPage = () => {
 				</Button>
 				<br />
 				<h1>Round Button:</h1>
-				<Button sizing='xs' flavor='rounded' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='sm' flavor='rounded'  equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='md' flavor='rounded' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='lg' flavor='rounded' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='xl' flavor='rounded' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='xl' flavor='rounded' isLoading equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
+				<Button sizing='xs' flavor='rounded' equalDimensions></Button>
+				<Button sizing='sm' flavor='rounded' equalDimensions></Button>
+				<Button sizing='md' flavor='rounded' equalDimensions></Button>
+				<Button sizing='lg' flavor='rounded' equalDimensions></Button>
+				<Button sizing='xl' flavor='rounded' equalDimensions></Button>
+				<Button sizing='xl' flavor='rounded' isLoading equalDimensions></Button>
 				<h1>Square Button:</h1>
-				<Button sizing='xs' flavor='flat'  equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='sm' flavor='flat' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='md' flavor='flat' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='lg' flavor='flat' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='xl' flavor='flat' equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
-				<Button sizing='xl' flavor='flat' isLoading equalDimensions>
-					<IconSun className='dui__icon' />
-				</Button>
+				<Button sizing='xs' flavor='flat' equalDimensions></Button>
+				<Button sizing='sm' flavor='flat' equalDimensions></Button>
+				<Button sizing='md' flavor='flat' equalDimensions></Button>
+				<Button sizing='lg' flavor='flat' equalDimensions></Button>
+				<Button sizing='xl' flavor='flat' equalDimensions></Button>
+				<Button sizing='xl' flavor='flat' isLoading equalDimensions></Button>
 			</div>
 			<br />
 			<div id='btn-utils'>
@@ -173,21 +149,11 @@ const ButtonsPage = () => {
 			<br />
 			<div id='btn-sizes'>
 				<h1>Button sizes:</h1>
-				<Button sizing='xs'>
-					<IconCompleted />I am a XSmall Button
-				</Button>
-				<Button sizing='sm'>
-					<IconCompleted />I am a Small Button
-				</Button>
-				<Button sizing='md'>
-					<IconCompleted />I am a Medium Button
-				</Button>
-				<Button sizing='lg'>
-					<IconCompleted />I am a Large Button
-				</Button>
-				<Button sizing='xl'>
-					<IconCompleted />I am a XLarge Button
-				</Button>
+				<Button sizing='xs'>I am a XSmall Button</Button>
+				<Button sizing='sm'>I am a Small Button</Button>
+				<Button sizing='md'>I am a Medium Button</Button>
+				<Button sizing='lg'>I am a Large Button</Button>
+				<Button sizing='xl'>I am a XLarge Button</Button>
 				<br />
 				<h1>Loading sizes:</h1>
 				<Button isLoading sizing='xs'>

@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, IconMoon, Tabs } from "@dodobrat/react-ui-kit";
+import { Button, ButtonGroup, Tabs } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { useState } from "react";
 
@@ -23,14 +23,7 @@ const TabsPage = () => {
 				<br />
 
 				<Tabs activeTab={8} orientation={tabOrientation}>
-					<Tabs.Panel
-						tab={
-							<>
-								<IconMoon /> Tab 1
-							</>
-						}>
-						1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.
-					</Tabs.Panel>
+					<Tabs.Panel tab={<>Tab 1</>}>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
 					<Tabs.Panel tab={"Tab 2"}>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
 					<Tabs.Panel tab={"Tab 3"}>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eaque.</Tabs.Panel>
 					<Tabs.Panel tab={"Tab 4"} disabled>

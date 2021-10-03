@@ -1,4 +1,4 @@
-import { Checkbox, CheckboxComponent, IconSettings } from "@dodobrat/react-ui-kit";
+import { Checkbox, CheckboxComponent } from "@dodobrat/react-ui-kit";
 import React, { useEffect, useRef, useState } from "react";
 
 const CheckboxesPanel = () => {
@@ -48,49 +48,23 @@ const CheckboxesPanel = () => {
 			</Checkbox>
 			<br />
 			<h1>Checkbox styling</h1>
-			<Checkbox
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				pigment='success'
-				disableWhileLoading={false}
-				isLoading>
+			<Checkbox pigment='success' disableWhileLoading={false} isLoading>
 				Success
 			</Checkbox>
 			<br />
-			<Checkbox
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				flavor='rounded'
-				disableWhileLoading={false}
-				isLoading>
+			<Checkbox flavor='rounded' disableWhileLoading={false} isLoading>
 				Rounded
 			</Checkbox>
 			<br />
-			<Checkbox
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				flavor='flat'
-				disableWhileLoading={false}
-				isLoading>
+			<Checkbox flavor='flat' disableWhileLoading={false} isLoading>
 				Flat
 			</Checkbox>
 			<br />
-			<Checkbox
-				sizing='xl'
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				isLoading
-				seamless
-				disableWhileLoading={false}>
+			<Checkbox sizing='xl' isLoading seamless disableWhileLoading={false}>
 				Seamless + XL size
 			</Checkbox>
 			<br />
-			<Checkbox
-				sizing='xl'
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				isLoading
-				disableWhileLoading={false}>
+			<Checkbox sizing='xl' isLoading disableWhileLoading={false}>
 				XL size
 			</Checkbox>
 			<br />

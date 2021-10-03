@@ -1,14 +1,4 @@
-import {
-	Button,
-	Checkbox,
-	CheckboxComponent,
-	Input,
-	InputComponent,
-	InputGroup,
-	IconMoon,
-	RadioComponent,
-	IconSun,
-} from "@dodobrat/react-ui-kit";
+import { Button, Checkbox, CheckboxComponent, Input, InputComponent, InputGroup, RadioComponent } from "@dodobrat/react-ui-kit";
 import React from "react";
 
 const InputGroupsPanel = () => {
@@ -40,9 +30,7 @@ const InputGroupsPanel = () => {
 				<Input
 					type='password'
 					placeholder='Enter password (custom icon)'
-					passwordRevealComponent={(visible) =>
-						visible ? <IconSun className='dui__icon' /> : <IconMoon className='dui__icon' />
-					}
+					passwordRevealComponent={(visible) => (visible ? "Wtf" : "Lol")}
 				/>
 			</InputGroup>
 		</div>

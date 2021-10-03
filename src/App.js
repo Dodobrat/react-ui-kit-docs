@@ -1,18 +1,5 @@
 import React, { lazy, Suspense, useEffect } from "react";
-import {
-	BackTop,
-	Button,
-	Container,
-	IconSun,
-	IconMoon,
-	useConfig,
-	AdminLayout,
-	Text,
-	IconWarning,
-	IconUser,
-	IconHamburger,
-	useAdminLayout,
-} from "@dodobrat/react-ui-kit";
+import { Button, Container, useConfig, AdminLayout, Text, useAdminLayout } from "@dodobrat/react-ui-kit";
 import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from "react-router-dom";
 
 const AlertsPage = lazy(() => import("./pages/AlertsPage"));
@@ -23,7 +10,6 @@ const CardPage = lazy(() => import("./pages/CardPage"));
 const CollapsePage = lazy(() => import("./pages/CollapsePage"));
 const DragScrollPage = lazy(() => import("./pages/DragScrollPage"));
 const FlexPage = lazy(() => import("./pages/FlexPage"));
-const IconsPage = lazy(() => import("./pages/IconsPage"));
 const ListGroupPage = lazy(() => import("./pages/ListGroupPage"));
 const PortalDrawerPage = lazy(() => import("./pages/PortalDrawerPage"));
 const ProgressPage = lazy(() => import("./pages/ProgressPage"));
@@ -41,127 +27,101 @@ const pages = [
 	{
 		path: "/alerts",
 		component: AlertsPage,
-		icon: <IconWarning className='dui__icon' />,
 		label: "Alerts",
 	},
 	{
 		path: "/badges",
 		component: BadgePage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Badges",
 	},
 	{
 		path: "/breadcrumbs",
 		component: BreadcrumbsPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Breadcrumbs",
 	},
 	{
 		path: "/buttons",
 		component: ButtonsPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Buttons",
 	},
 	{
 		path: "/cards",
 		component: CardPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Cards",
 	},
 	{
 		path: "/collapse",
 		component: CollapsePage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Collapse",
 	},
 	{
 		path: "/dragscroll",
 		component: DragScrollPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "DragScroll",
 	},
 	{
 		path: "/dropdowns",
 		component: DropdownsPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Dropdowns",
 	},
 	{
 		path: "/flex",
 		component: FlexPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Flex",
 	},
 	{
 		path: "/forms",
 		component: FormsPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Forms",
-	},
-	{
-		path: "/icons",
-		component: IconsPage,
-		icon: <IconUser className='dui__icon' />,
-		label: "Icons",
 	},
 	{
 		path: "/inputs",
 		component: InputsPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Inputs",
 	},
 	{
 		path: "/lists",
 		component: ListGroupPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Lists",
 	},
 	{
 		path: "/portals",
 		component: PortalDrawerPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Portals / Drawers",
 	},
 	{
 		path: "/progress",
 		component: ProgressPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Progress",
 	},
 	{
 		path: "/skeleton",
 		component: SkeletonPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Skeleton",
 	},
 	{
 		path: "/spinners",
 		component: SpinnersPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Spinners",
 	},
 	{
 		path: "/tables",
 		component: TablesPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Tables",
 	},
 	{
 		path: "/tabs",
 		component: TabsPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Tabs",
 	},
 	{
 		path: "/tooltips",
 		component: TooltipPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Tooltips",
 	},
 	{
 		path: "/typography",
 		component: TypographyPage,
-		icon: <IconUser className='dui__icon' />,
 		label: "Typography",
 	},
 ];
@@ -186,7 +146,7 @@ const App = () => {
 						className='py--2'
 						main={
 							<Button onClick={toggleSidebar} flavor='rounded' equalDimensions pigment='default'>
-								<IconHamburger className='dui__icon' />
+								=
 							</Button>
 						}
 						extended={<Text className='mb--0'>@dodobrat/react-ui-kit</Text>}
@@ -194,7 +154,7 @@ const App = () => {
 					<AdminLayout.Sidebar.Item
 						main={
 							<Button onClick={toggleDarkTheme} flavor='rounded' equalDimensions pigment='secondary'>
-								{dark ? <IconMoon className='dui__icon' /> : <IconSun className='dui__icon' />}
+								{dark ? "Dark" : "Light"}
 							</Button>
 						}
 						extended={<Text className='mb--0'>{dark ? "Dark Theme" : "Light Theme"}</Text>}
@@ -214,7 +174,7 @@ const App = () => {
 				<AdminLayout.Topbar>
 					<Container className='px--3 h--100 d--grid' style={{ alignItems: "center" }} sizing='xl'>
 						<Button flavor='rounded' equalDimensions pigment='default' onClick={toggleSidebar} className='d--sm--none'>
-							<IconHamburger className='dui__icon' />
+							=
 						</Button>
 					</Container>
 				</AdminLayout.Topbar>
@@ -230,10 +190,7 @@ const App = () => {
 						</Suspense>
 					</Container>
 				</AdminLayout.Content>
-				<AdminLayout.Footer>
-					<BackTop position='bottom' />
-					<BackTop scrollDistanceTrigger={100} />
-				</AdminLayout.Footer>
+				<AdminLayout.Footer>Footer</AdminLayout.Footer>
 			</AdminLayout>
 		</Router>
 	);

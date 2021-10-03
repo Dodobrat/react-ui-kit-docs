@@ -1,4 +1,4 @@
-import { Input, InputComponent, IconSettings } from "@dodobrat/react-ui-kit";
+import { Input, InputComponent } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { useState } from "react";
 
@@ -18,71 +18,24 @@ const InputsPanel = () => {
 			<br />
 			<InputComponent placeholder='Seamless Only Input' seamless />
 			<h1>Input</h1>
-			<Input
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				defaultValue='Seamless Input'
-				isClearable
-				seamless
-				isLoading
-				disableWhileLoading={false}
-				placeholder='Input text here'
-			/>
+			<Input defaultValue='Seamless Input' isClearable seamless isLoading disableWhileLoading={false} placeholder='Input text here' />
 			<br />
-			<Input
-				type='password'
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				value={value}
-				onChange={onChange}
-				isClearable
-				placeholder='Input text here'
-			/>
+			<Input type='password' value={value} onChange={onChange} isClearable placeholder='Input text here' />
 			<br />
 			<Input flavor='flat' />
 			<br />
 			<Input flavor='rounded' />
 			<br />
 			<h1>Input sizes</h1>
-			<Input
-				defaultValue='Extra Small Input'
-				sizing='xs'
-				isClearable
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-			/>
+			<Input defaultValue='Extra Small Input' sizing='xs' isClearable />
 			<br />
-			<Input
-				defaultValue='Small Input'
-				sizing='sm'
-				isClearable
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-			/>
+			<Input defaultValue='Small Input' sizing='sm' isClearable />
 			<br />
-			<Input
-				defaultValue='Default Input'
-				sizing='md'
-				isClearable
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-			/>
+			<Input defaultValue='Default Input' sizing='md' isClearable />
 			<br />
-			<Input
-				defaultValue='Large Input'
-				sizing='lg'
-				isClearable
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-			/>
+			<Input defaultValue='Large Input' sizing='lg' isClearable />
 			<br />
-			<Input
-				defaultValue='Extra Large Input'
-				sizing='xl'
-				isClearable
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-			/>
+			<Input defaultValue='Extra Large Input' sizing='xl' isClearable />
 			<br />
 			<h1>Input Types</h1>
 			<h3>Default(Text)</h3>

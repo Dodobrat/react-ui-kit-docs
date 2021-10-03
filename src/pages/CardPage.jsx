@@ -1,4 +1,4 @@
-import { Button, Card, IconClose, IconMore } from "@dodobrat/react-ui-kit";
+import { Button, Card } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -149,10 +149,10 @@ const CardPage = () => {
 						actions={
 							<>
 								<Button sizing='xs' pigment={null}>
-									<IconMore className='dui__icon' />
+									X{" "}
 								</Button>
 								<Button sizing='xs' pigment={null}>
-									<IconClose className='dui__icon' />
+									X{" "}
 								</Button>
 							</>
 						}>

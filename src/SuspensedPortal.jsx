@@ -1,4 +1,4 @@
-import { Button, Card, Portal, IconClose } from "@dodobrat/react-ui-kit";
+import { Button, Card, Portal } from "@dodobrat/react-ui-kit";
 import { forwardRef } from "react";
 
 const SuspensedPortal = forwardRef((props, ref) => {
@@ -10,7 +10,7 @@ const SuspensedPortal = forwardRef((props, ref) => {
 				<Card.Header
 					actions={
 						<Button sizing='xs' pigment='none' onClick={onClose}>
-							<IconClose className='dui__icon' />
+							X
 						</Button>
 					}>
 					Portal Modal

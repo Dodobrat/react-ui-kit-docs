@@ -1,4 +1,4 @@
-import { Alert, Button, IconClose } from "@dodobrat/react-ui-kit";
+import { Alert } from "@dodobrat/react-ui-kit";
 import React from "react";
 
 const AlertsPage = () => {
@@ -6,7 +6,7 @@ const AlertsPage = () => {
 		<div>
 			<br />
 			<h1>Alert Pigments</h1>
-			<Alert pigment={{ base: null, lg: "danger" }} pigmentColor={{ base: "danger", lg: null }} className='filled'>
+			{/* <Alert pigment={{ base: null, lg: "danger" }} pigmentColor={{ base: "danger", lg: null }} className='filled'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor? Ex porro omnis earum quae, ad, maxime provident
 				exercitationem animi eveniet quis debitis sapiente dicta culpa itaque quibusdam aut doloribus sit distinctio qui dolorum
 				officiis accusantium? Sunt ex, dolorum voluptas minima natus consequatur velit accusamus quo cupiditate magni nulla earum
@@ -15,10 +15,10 @@ const AlertsPage = () => {
 				Reprehenderit culpa itaque adipisci voluptates enim ad natus? Alias mollitia porro, dolorum hic optio delectus cumque id
 				eveniet ratione at soluta dignissimos eius!
 			</Alert>
-			<br />
+			<br /> */}
 			<Alert pigment='default'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
 			<br />
-			<Alert pigment='primary'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
+			{/* <Alert pigment='primary'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
 			<br />
 			<Alert pigment='secondary'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.</Alert>
 			<br />
@@ -88,12 +88,12 @@ const AlertsPage = () => {
 				isDismissible
 				dismissibleComponent={
 					<Button sizing='xs' pigment='warning'>
-						<IconClose className='dui__icon' />
+						X
 					</Button>
 				}>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, commodi.
 			</Alert>
-			<br />
+			<br /> */}
 		</div>
 	);
 };

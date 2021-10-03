@@ -1,4 +1,4 @@
-import { IconSettings, Switch, SwitchComponent } from "@dodobrat/react-ui-kit";
+import { Switch, SwitchComponent } from "@dodobrat/react-ui-kit";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -51,49 +51,23 @@ const SwitchPanel = () => {
 			</Switch>
 			<br />
 			<h1>Switch styling</h1>
-			<Switch
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				pigment='success'
-				disableWhileLoading={false}
-				isLoading>
+			<Switch pigment='success' disableWhileLoading={false} isLoading>
 				Success
 			</Switch>
 			<br />
-			<Switch
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				flavor='rounded'
-				disableWhileLoading={false}
-				isLoading>
+			<Switch flavor='rounded' disableWhileLoading={false} isLoading>
 				Rounded
 			</Switch>
 			<br />
-			<Switch
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				flavor='flat'
-				disableWhileLoading={false}
-				isLoading>
+			<Switch flavor='flat' disableWhileLoading={false} isLoading>
 				Flat
 			</Switch>
 			<br />
-			<Switch
-				sizing='xl'
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				isLoading
-				seamless
-				disableWhileLoading={false}>
+			<Switch sizing='xl' isLoading seamless disableWhileLoading={false}>
 				Seamless + XL size
 			</Switch>
 			<br />
-			<Switch
-				sizing='xl'
-				preffix={<IconSettings className='dui__icon' />}
-				suffix={<IconSettings className='dui__icon' />}
-				isLoading
-				disableWhileLoading={false}>
+			<Switch sizing='xl' isLoading disableWhileLoading={false}>
 				XL size
 			</Switch>
 			<br />
